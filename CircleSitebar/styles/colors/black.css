@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+.sidebar-content-background{
+	background-color:#343434;
+	width:262px;
+}
+
+.nav-item-submenu a{
+	opacity:0.3;
+}

@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+.sidebar-content-background{
+	background-image:url(../../images/misc/sidebar-bg-rail.png);
+	width:262px;
+}
+
+
+.nav-item-submenu a{
+	opacity:0.3;
+}
