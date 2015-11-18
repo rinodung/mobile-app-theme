@@ -1,0 +1,1345 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Pages and PageApps Documentation  - Enabled's Epsilon Mobile and Tablet Framework</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="Enabled">
+	<meta name="copyright" content="Enabled">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2015-07-15T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#0000FF;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #0088CC #0088CC #bfbfbf;
+		  background-color: #0044CC;
+		}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ul{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ul a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ul a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-pages-and-pageapps-documentation-">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#introduction" title="Introduction">Introduction</a></li>
+			<li><a href="#secondary_classes" title="Secondary Classes">Secondary Classes</a></li>
+			<li><a href="#content_sliders" title="Content Sliders">Content Sliders</a></li>
+			<li><a href="#gallery_round_square" title="Gallery Round & Square">Gallery Round & Square</a></li>
+			<li><a href="#gallery_justified" title="Gallery Justified">Gallery Justified</a></li>
+			<li><a href="#adaptive_gallery_portfolio" title="Adaptive Gallery / Portfolio">Adaptive Gallery / Portfolio</a></li>
+			<li><a href="#portfolio_1_and_2_columns" title="Portfolio 1 and 2 Columns">Portfolio 1 and 2 Columns</a></li>
+			<li><a href="#portfolio_wide" title="Portfolio Wide">Portfolio Wide</a></li>
+			<li><a href="#portfolio_filterable" title="Portfolio Filterable">Portfolio Filterable</a></li>
+			<li><a href="#page_activity" title="Page Activity">Page Activity</a></li>
+			<li><a href="#page_calendar" title="Page Calendar">Page Calendar</a></li>
+			<li><a href="#page_charts" title="Page Charts">Page Charts</a></li>
+			<li><a href="#page_login" title="Page Login">Page Login</a></li>
+			<li><a href="#page_register" title="Page Register">Page Register</a></li>
+			<li><a href="#page_map" title="Page Map">Page Map</a></li>
+			<li><a href="#page_reviews" title="Page Reviews">Page Reviews</a></li>
+			<li><a href="#pageapp_checklist_tasklist" title="PageApp Checklist & Tasklist">PageApp Checklist & Tasklist</a></li>
+			<li><a href="#pageapp_reminders" title="PageApp Reminders">PageApp Reminders</a></li>
+			<li><a href="#pageapp_error" title="PageApp Error">PageApp Error</a></li>
+			<li><a href="#pageapp_soon" title="PageApp Soon">PageApp Soon</a></li>
+			<li><a href="#pageapp_signup" title="PageApp Signup">PageApp Signup</a></li>
+			<li><a href="#pageapp_login" title="PageApp Login">PageApp Login</a></li>
+			<li><a href="#pageapp_coverpage" title="PageApp Coverpage">PageApp Coverpage</a></li>
+			<li><a href="#the_end" title="The end? ">The end? </a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright Enabled 2015<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Pages and PageApps Documentation </h1>
+	<h2>Enabled's Epsilon Mobile and Tablet Framework</h2>
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>created: 07/12/2015</li>
+	<li>latest update: 07/15/2015</li>
+	<li>by: Enabled</li>
+	<li><a href=""></a></li>
+	
+	</ul>
+	<p></p>
+	</section>
+	
+	<section id="introduction">
+	<div class="page-header"><h3>Introduction</h3><hr class="notop"></div>
+<p>
+	Thank you for purchasing our file, we&#39;re really happy you loved our product on sight, but we plan on making you even happier by making a docuemntation that covers all features, and gives you no headaches. We&#39;ve split the documentation into two separate parts, one that covers all the features of the framework, this one, and another one that covers the design elements of the item, the first docuemntation.</p>
+<p>
+	So, let&#39;s get started!&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	The documentation is structured as follows!&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>1. Structure Docuemntation</strong></p>
+<p>
+	The docuemntation you are currently reading, which will show you the basic features, structure, and the most important aspects of the item</p>
+<p>
+	<strong>2. Page and PageApp Docuemntation</strong></p>
+<p>
+	The documentations that show you how to use the included page templates, and how to create your own pages from the template provided.</p>
+<p>
+	<strong>3. Current Template Docuemntation</strong></p>
+<p>
+	The unique features that the template you purchased has, and how to implement them in the structure. These features can range from custom headers, custom navigations and custom sliders or column structures that get added inside the template!&nbsp;</p>
+<div class="alert alert-error">
+	It&#39;s VERY important that you read at least the&nbsp;<strong>STRUCTURE DOCUMENTATION&nbsp;</strong>and the&nbsp;<strong>CURRENT TEMPLAETE DOCUMENTATION&nbsp;</strong>before attemting to edit the template if you do not have advnaced knowledge of HTML, CSS and JS in order to properly edit the item and not run into errors!&nbsp;</div>
+</section>
+<section id="secondary_classes">
+	<div class="page-header"><h3>Secondary Classes</h3><hr class="notop"></div>
+<p>	Secondary classes or options classes are give you the ability to further customize an element. You&#39;ll see a lot of references inside the docuemntation of adding Secondary Classes to elements, and these are the available secondary classes you can use.&nbsp;</p>
+<h4 id="secondary_classes_spacing">Spacing</h4>
+<p>	<strong>full-bottom:&nbsp;</strong>adds a margin bottom to an element, that is equal to the container spacing, to keep visual hiearchy</p>
+<p>	<strong>half-bottom:</strong> adds half the total of the margin bottom used throughout containers</p>
+<p>	<strong>no-bottom</strong>: this class can be used if you are using an element within a container that has a full bottom at the end. That will result in having a full bottom added by default from both elements. To counter this, you can add no-bottom to any of the elements to keep one of them from applying the bottom. An instant example would be if you have a parahraph inside a container. You can add the class no-bottom either to the parahraph or the container and only one of them will add the bottom margin.</p>
+<h4 id="secondary_classes_background_colors">Background Colors</h4>
+<p>	Some elements such as highlighted text, headings or notifications and many others, have a background color secondary class added to them that represents the background-color of that element. By default, we chose some of the internationally used colors, but you can easily choose between the following secondary classes to change the background colors.&nbsp;</p>
+<p>	<strong>Teal:&nbsp;</strong>bg-teal-light or bg-teal-dark</p>
+<p>	<strong>Green:&nbsp;</strong>bg-green-light or bg-green-dark</p>
+<p>	<strong>Blue:&nbsp;</strong>bg-blue-light or bg-blue-dark</p>
+<p>	<strong>Magenta:&nbsp;</strong>bg-magenta-light or bg-magenta-dark</p>
+<p>	<strong>Yellow:&nbsp;</strong>bg-yellow-light or bg-yellow-dark</p>
+<p>	<strong>Red:&nbsp;</strong>bg-red-light or bg-red-dark</p>
+<p>	<b>Orange:&nbsp;</b>bg-orange-light or bg-orange-dark</p>
+<p>	<strong>Gray:&nbsp;</strong>bg-gray-light or bg-orange-dark</p>
+<h4 id="secondary_classes_social_background_colors">Social Background Colors</h4>
+<p>	If you encounter a situation where you need a background color to match social media we&#39;ve included the default colors of each social media ( we know are used, sorry if we missed any, but do tell us and we&#39;ll gladly update the framework with more feautres)&nbsp;</p>
+<p>	<strong>Facebook&nbsp;</strong>: facebook-color</p>
+<p>	<strong>Twitter:&nbsp;</strong>twitter-color</p>
+<p>	<strong>Google:&nbsp;</strong>google-color</p>
+<p>	<strong>Pinterest:</strong> pinterest-color</p>
+<p>	<strong>SMS</strong>: sms-color ( this is green as per default on mobile messanging apps )&nbsp;</p>
+<p>	<b>Mail:&nbsp;</b>mail-color ( this is blue, as most mail icons are blue )</p>
+<p>	<strong>Dribbble:&nbsp;</strong>dribbble-color</p>
+<p>	<b>Tumblr:&nbsp;</b>tumblr-color</p>
+<p>	<strong>Reddit:&nbsp;</strong>reddit-color</p>
+<p>	<strong>YouTube:&nbsp;</strong>youtube-color&nbsp;</p>
+<p>	When giving an element the social aditional class, the color of the text and the background will automaticlly change. We&#39;ve included social icons and buttons as well that you can find &nbsp;in the Other Features Chapter</p>
+<h4 id="secondary_classes_text_color">Text Color</h4>
+<p>	Although this feautre is not experiemental, you can change certain colors of text using aditional classes. If that doesn&#39;t work, it means the feature is deeply integrated into CSS and you&#39;ll have to locate that feature&#39;s class and change it directly from framework.css or style.css. Adding the following secondary classes to elements should change the color of the text unless explained as above</p>
+<p>	<strong>Teal:&nbsp;</strong>color-teal-light or color-teal-dark</p>
+<p>	<strong>Green:&nbsp;</strong>color-green-light or color-green-dark</p>
+<p>	<strong>Blue:&nbsp;</strong>color-blue-light or color-blue-dark</p>
+<p>	<strong>Magenta:&nbsp;</strong>color-magenta-light or color-magenta-dark</p>
+<p>	<strong>Yellow:&nbsp;</strong>color-yellow-light or color-yellow-dark</p>
+<p>	<strong>Red:&nbsp;</strong>color-red-light or color-red-dark</p>
+<p>	<b>Orange:&nbsp;</b>color-orange-light or color-orange-dark</p>
+<p>	<strong>Gray:&nbsp;</strong>color-gray-light or color-orange-dark</p>
+<p>	&nbsp;</p>
+<h4 id="secondary_classes_text_features">Text Features</h4>
+<p>	You can set the text to center, left, or right, and also modify it from bold to light, italic or regular using simple classes as well</p>
+<p>	<strong>center-text</strong> makes the text centered on all resolutions</p>
+<p>	<strong>right-text</strong> makes the text right aligned on all resolutions</p>
+<p>	<strong>left-text&nbsp;</strong>makes the text left aligned on all resolutions</p>
+<p>	Adding&nbsp;<strong>-mobile&nbsp;</strong>or&nbsp;<strong>-tablet</strong> to the the above classes will apply the setting only for those devices.&nbsp;</p>
+<p>	<strong>uppercase&nbsp;</strong>makes the text uppercased</p>
+<p>	<strong>lowercase&nbsp;</strong>makes the text lowercased</p>
+<p>	<strong>thin</strong> makes the text thin</p>
+<p>	<strong>bold</strong> makes the text bold ( like the default strong class )</p>
+<p>	<strong>ultrabold&nbsp;</strong>makes the text the maximum bold available for that font.</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+</section>
+<section id="content_sliders">
+	<div class="page-header"><h3>Content Sliders</h3><hr class="notop"></div>
+<p>
+	Using the provided content sliders, is beyond doubt extremly easy! JS and HTML too!&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	We&#39;ll be explaining the main homepage slider with transitions, and everyother slider in the template, works exactly the same as this one! No complications, just super simple easy code!&nbsp;</p>
+<p>
+	&nbsp;</p>
+<pre class="prettyprint lang-html linenums">
+</pre>
+<div>
+	&lt;div class=&quot;homepage-slider container-fullscreen&quot;&gt;</div>
+<div>
+	&nbsp; &nbsp; &lt;div class=&quot;homepage-slider-transition&quot; data-snap-ignore=&quot;true&quot;&gt;</div>
+<div>
+	<span style="font-family: Arial, Verdana, sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></div>
+<div>
+	&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;homepage-slider-item&quot;&gt;</div>
+<div>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h5 class=&quot;center-text&quot;&gt;This slider has CSS3 transitions&lt;/h5&gt;</div>
+<div>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;center-text&quot;&gt;And they are just awesome!&lt;/p&gt;</div>
+<div>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img src=&quot;images/pictures/5ww.jpg&quot; alt=&quot;img&quot;&gt;</div>
+<div>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;overlay bg-black&quot;&gt;&lt;/div&gt;</div>
+<div>
+	&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt; &nbsp;</div>
+<div>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+<div>
+	&nbsp; &nbsp; &lt;/div&gt;</div>
+<div>
+	&nbsp; &nbsp; &lt;a href=&quot;#&quot; class=&quot;next-home-slider&quot;&gt;&lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;</div>
+<div>
+	&nbsp; &nbsp; &lt;a href=&quot;#&quot; class=&quot;prev-home-slider&quot;&gt;&lt;i class=&quot;fa fa-angle-left&quot;&gt;&lt;/i&gt;&lt;/a&gt;</div>
+<div>
+	&lt;/div&gt; &nbsp; &nbsp;</div>
+<p>
+	Line 1 is the container that expands fullscreen. The homepage-slider class is added for CSS controling the overlay and the inner sliders</p>
+<p>
+	Line 2 is the js function.&nbsp;<strong>homepage-slider-transition</strong> is used in JS to call this as our slider</p>
+<p>
+	Line &nbsp;4, 5, 6, 7, 8, 9 is the slider item itself. Duplicate this to create new slides, change the text inside with your own, the iamge as well, and also, you can use&nbsp;<strong>secondary classes&nbsp;</strong>for text to change alignment.</p>
+<p>
+	Line 11 closes the homepage slider activator</p>
+<p>
+	Line 12 and 13 are the next and previous controls. These are inside framework.css and you can locate them there. Please note that the centering of these items is done for all sliders. You&#39;ll just have to add your own classes to the media query after the already defined ones</p>
+<p>
+	Line 14 closes the entire wrapper that holds the slider</p>
+<p>
+	Now, getting down to the javascript&nbsp;</p>
+<p>
+	&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+$(&#39;.homepage-slider-transition&#39;).owlCarousel({
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+    animateOut: &#39;zoomOut&#39;,
+    animateIn: &#39;zoomIn&#39;,
+    loop:true,
+    margin:10,
+    nav:false,
+    dots:false,
+    items:1
+});</pre>
+<p>
+	&nbsp;</p>
+<p>
+	Line 1 is the class that will house the image slider</p>
+<p>
+	Line 2 is the autplay propery. Set this to false if you don&#39;t want to enable autoplay</p>
+<p>
+	Line 3 is the auto play timeout. The values are expressed in milliseconds. 5000 miliseconds &nbsp;= 5 seconds</p>
+<p>
+	Line 4 is the out animation, when the slide changes what happens to the old one.&nbsp;</p>
+<p>
+	Line 5 is the in animation, when the slide changes what happens to the new one.&nbsp;</p>
+<p>
+	Lines 4 and 5 are Animate.CSS (https://daneden.github.io/animate.css/) classes. Check the link, and use what&#39;s there for the clases.&nbsp;</p>
+<p>
+	Line 6 is the loop. What happens when the end slide is reached</p>
+<p>
+	Line 7 is the margin between slides when they change or when you swipe them</p>
+<p>
+	Line 8 is the nav. leave it set to false. We&#39;ll get to custom buttons soon!&nbsp;</p>
+<p>
+	Line 9 are the slider dots, just like on the coverpage. Set them to true to see them!&nbsp;</p>
+<p>
+	Line 10 is the number of items. The items can either be set to a fixed number on all resolutions or can be set to responsive like so. remove the entire items row and add the following&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})</pre>
+<p>
+	To create custom buttons you&#39;ll have to add the following to JS&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+$(&#39;.next-home-slider&#39;).click(function() {
+    $(&#39;.homepage-slider-transition&#39;).trigger(&#39;next.owl.carousel&#39;);
+}); 
+
+$(&#39;.prev-home-slider&#39;).click(function() {
+    $(&#39;.homepage-slider-transition&#39;).trigger(&#39;prev.owl.carousel&#39;);
+});</pre>
+<div>
+	.next-home-slider is the class of the button you click to change the slider that is added to the second line, whcih in our case is homepage-slider-transition. It will back trigger a next slide event.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	.prev-home-slider is the class of the button you click to change the slider that is added to the sixth line which is in our case the homepage-slider-transition.&nbsp;&nbsp;It will back trigger a next slide event.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Remember, you;ll have to add them to CSS as well. Just search for prev-home-slider in framework.css and you&#39;ll find our slider navigation construction. you can just add your class next to ours and our settings will do everything.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+</section>
+<section id="gallery_round_square">
+	<div class="page-header"><h3>Gallery Round & Square</h3><hr class="notop"></div>
+<p>	The difference between a round gallery and a square gallery is the aditional class. Replace&nbsp;<strong>round-thumbs&nbsp;</strong>with&nbsp;<strong>square-thumbs&nbsp;</strong>and the gallery become square thumbed!&nbsp;</p>
+<p>	The gallery does not have to be inside a container, you can place it outside as well.&nbsp;</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;gallery round-thumbs&quot;&gt;
+    &lt;a href=&quot;images/pictures/1.jpg&quot; class=&quot;show-gallery&quot; title=&quot;Your caption here!&quot;&gt;&lt;img src=&quot;images/pictures/1s.jpg&quot; alt=&quot;img&quot;&gt;&lt;/a&gt;                                  
+&lt;/div&gt;</pre>
+<p>	To create more elements, simply duplicate the anchor class inside and replace the href and the img src with with your images.&nbsp;</p>
+<p>	&nbsp;</p>
+</section>
+<section id="gallery_justified">
+	<div class="page-header"><h3>Gallery Justified</h3><hr class="notop"></div>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;gallery-justified&quot;&gt;
+    &lt;a href=&quot;IMG_LOCATION&quot; class=&quot;show-gallery&quot; title=&quot;Caption&quot;&gt;&lt;img src=&quot;IMG_LOCATION&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;IMG_LOCATION&quot; class=&quot;show-gallery&quot; title=&quot;Caption&quot;&gt;&lt;img src=&quot;IMG_LOCATION&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;IMG_LOCATION&quot; class=&quot;show-gallery&quot; title=&quot;Caption&quot;&gt;&lt;img src=&quot;IMG_LOCATION&quot;&gt;&lt;/a&gt;    
+&lt;/div&gt;</pre>
+<p>	Adding the IMG_LOCATION to your images location will automatically generate a justified gallery. The images will be alinged in order of the design of these images. Using 16:9 images will create wide thumbs, using 1:1 images will use square thumbs and using 9:10 images will create tall thumbs.&nbsp;</p>
+<p>	A justified gallery means the images will always be in line with each other, basically, like a mansonry design. &nbsp;All the images you&#39;ll add here will automatically be alinged to a certain height. To change the height you want to display, open custom.js &nbsp;and locate the code below.&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+    function apply_gallery_justification(){
+        var screen_widths = $(window).width();
+        //MOBILE SETTINGS
+        if( screen_widths &lt; 768){ 
+            $(&#39;.gallery-justified&#39;).justifiedGallery({
+                rowHeight : 70,
+                maxRowHeight : 370,
+                margins : 5,
+                fixedHeight:false
+            });
+        };
+        // TABLET SETTINGS
+        if( screen_widths &gt; 768){
+            $(&#39;.gallery-justified&#39;).justifiedGallery({
+                rowHeight : 150,
+                maxRowHeight : 370,
+                margins : 5,
+                fixedHeight:false
+            });
+        };
+    };</pre>
+<p>	The code above generates the elements for each scenarion, mobile and tablet. You can replace the rowHeight value from both to change the height for different screens.&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+</section>
+<section id="adaptive_gallery_portfolio">
+	<div class="page-header"><h3>Adaptive Gallery / Portfolio</h3><hr class="notop"></div>
+<p>	The adaptive gallery and adaptive portfolio use the same classes for refference. The difference is that one houses only images while the other can house text as well.&nbsp;</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;portfolio-adaptive portfolio-adaptive-three&quot;&gt;&lt;!--(1)--&gt;
+    &lt;div class=&quot;portfolio-adaptive-controls&quot;&gt;
+        &lt;h4&gt;Change View&lt;/h4&gt;                        
+        &lt;a class=&quot;portfolio-switch adaptive-three active-adaptive&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-th&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;!--(2)--&gt;
+        &lt;a class=&quot;portfolio-switch adaptive-two&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-th-large&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;a class=&quot;portfolio-switch adaptive-one&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-navicon&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+        &lt;p&gt;
+           Your Text Here
+        &lt;/p&gt;
+
+    &lt;/div&gt;
+    &lt;div class=&quot;decoration&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;portfolio-item&quot;&gt;&lt;!--(3)--&gt;
+        &lt;a class=&quot;show-gallery&quot; href=&quot;images/pictures/1.jpg&quot; title=&quot;Add captions here!&quot;&gt;&lt;img src=&quot;images/pictures/1s.jpg&quot; alt=&quot;img&quot; class=&quot;responsive-image&quot;&gt;&lt;/a&gt;&lt;!--(4)--&gt;
+        &lt;h4&gt;Item 6&lt;/h4&gt;&lt;!--(5)--&gt;
+        &lt;p&gt;&lt;!--(6)--&gt;
+           Portfolio Text Here
+           &lt;a href=&quot;#&quot; class=&quot;adaptive-more right-text&quot;&gt;
+                Read More 
+                &lt;i class=&quot;fa fa-long-arrow-right&quot;&gt;&lt;/i&gt;
+           &lt;/a&gt;&lt;!--(7)--&gt;
+        &lt;/p&gt;
+    &lt;/div&gt; 
+&lt;/div&gt;</pre>
+<p>	&nbsp;</p>
+<p>	The code is highlighted with some numbers which we&#39;ll explain exactly what each do.&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	(1) The secondary class,&nbsp;<strong>portfolio-adaptive-three</strong> sets the default state of the portfolio, currently, it loads showing 3 items, if you want it to show 1 column set it to&nbsp;<strong>portfolio-adaptive-one</strong> and if you want it it to show 2 columns set it to&nbsp;<strong>portfolio-adaptive-two</strong></p>
+<p>	(2) The buttons that change the portfolio can be selected by adding the secondary class&nbsp;<strong>active-adaptive&nbsp;</strong>to any button. This will turn it orange, showing it&#39;s activated.&nbsp;</p>
+<p>	(3) Duplicating the entire portfolio-item class will generate a new item for the portfolio or gallery. In order to generate a gallery, you will only need to leave item (4) in there. Items (5), (6), (7) can be removed. This way, you will have an adaptive image gallery. To keep the portfolio aspect of the item, simply leave (5), (6), (7) in there and add your content to them.&nbsp;</p>
+</section>
+<section id="portfolio_1_and_2_columns">
+	<div class="page-header"><h3>Portfolio 1 and 2 Columns</h3><hr class="notop"></div>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;portfolio-one&quot;&gt;&lt;!--(1)--&gt;
+    &lt;div class=&quot;portfolio-item container&quot;&gt;
+        &lt;a href=&quot;images/pictures/1.jpg&quot; class=&quot;show-gallery&quot;&gt;
+           &lt;img src=&quot;images/pictures/1w.jpg&quot; alt=&quot;img&quot; class=&quot;responsive-image image-fullscreen&quot;&gt;&lt;!--(2)--&gt;
+        &lt;/a&gt;
+        &lt;h4&gt;Portfolio Title 1&lt;/h4&gt;
+        &lt;em class=&quot;color-red-dark&quot;&gt;Optional Subtitle or Prefered Text&lt;/em&gt;
+        &lt;p&gt;
+           Portfolio Text
+        &lt;/p&gt;
+        &lt;a href=&quot;#&quot; class=&quot;portfolio-link&quot;&gt;&lt;i class=&quot;fa fa-link&quot;&gt;&lt;/i&gt;Read More&lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;portfolio-share show-share-bottom&quot;&gt;&lt;i class=&quot;fa fa-retweet&quot;&gt;&lt;/i&gt;Share&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>	&nbsp;</p>
+<p>	Line 1 generates the portfolio-one container. This class and housing is esential</p>
+<p>	Line 2 generates the portfolio item and adds a full bottom by having the secondary class container. Duplicating lines 2 - 13 will generate a new portfolio item</p>
+<p>	Line 3 creates the tappable image that opens a gallery connected to that image.</p>
+<p>	Line 4 Is the image that is shown. The class responsive-image and image-fullscreen are esential. The image-fullscreen extends the image from edge to edge of the screen</p>
+<p>	Line 5 closes the gallery activation</p>
+<p>	Line 6 is the portfolio title</p>
+<p>	Line 7 is the subtitle. Set the secondary class disabled if you do not require it.&nbsp;</p>
+<p>	Line 8, 9, 10 is where your description of the item will go</p>
+<p>	Line 11 is the read more link</p>
+<p>	Line 12 is the sharing bottom opener. This will share the entire page, not only this portfolio item. This is a site template, sharing individual elements can be done only using databases and a CMS.&nbsp;</p>
+<p>	Line 13 closes the portfolio item. Duplicating the entire element from line 2 until here generates a new item</p>
+<p>	Line 14 closes the portfolio-one wrapper, which houses all the 1 column portfolio items.&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	<b>Portfolio 2 Columns uses the exact same structure with 2 exceptions!&nbsp;</b></p>
+<p>	(1) has to be changed to portfolio-two</p>
+<p>	(2) the aditional class image-fullscreen must be removed.&nbsp;</p>
+<p>	Doing that, will generate a two columm portfolio.&nbsp;</p>
+</section>
+<section id="portfolio_wide">
+	<div class="page-header"><h3>Portfolio Wide</h3><hr class="notop"></div>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;portfolio-wide container-fullscreen&quot;&gt;
+    &lt;div class=&quot;portfolio-item&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;wide-title show-wide-text&quot;&gt;
+            &lt;h3&gt;Wide Portfolios&lt;/h3&gt;
+            &lt;em&gt;With captions and galleries&lt;/em&gt;
+            &lt;div class=&quot;overlay bg-black&quot;&gt;&lt;/div&gt;
+            &lt;img src=&quot;images/pictures/1w.jpg&quot; alt=&quot;img&quot;&gt;
+        &lt;/a&gt;   
+
+        &lt;div class=&quot;wide-text&quot;&gt;
+            &lt;p&gt;
+                 Your Text Here
+            &lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;portfolio-close&quot;&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt;Close&lt;/a&gt;
+            &lt;a href=&quot;#&quot; class=&quot;portfolio-share show-share-bottom&quot;&gt;&lt;i class=&quot;fa fa-retweet&quot;&gt;&lt;/i&gt;Share&lt;/a&gt;
+            &lt;a href=&quot;#&quot; class=&quot;portfolio-link&quot;&gt;&lt;i class=&quot;fa fa-link&quot;&gt;&lt;/i&gt;More&lt;/a&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>	Line 1 genrates the portfolio-wide. It&#39;s class is esential. Adding the secondary class container-fullscreen makes the portfolio stretch from edge to edge</p>
+<p>	Line 2 openes the portfolio item. Duplicating lines 2 to 19 will create a new portfolio item</p>
+<p>	Line 3 is the image that will be tapped to open the text</p>
+<p>	Line 4 is the title big caption over the image</p>
+<p>	Line 5 is the small text over the caption</p>
+<p>	Line 6 is the black overlay over the image</p>
+<p>	Line 7 is the image in the background</p>
+<p>	Line 8 closes the captioned image that will be tapped&nbsp;</p>
+<p>	Line 10 opens the wide portfolio text where the portfolio description and buttons will be</p>
+<p>	Line 11, 12, 13 is the text of the item when the caption is tapped</p>
+<p>	Line 14 is the close icon</p>
+<p>	Line 15 will open the bottom share, again, this will share the entire page, not just the article</p>
+<p>	Line 16 is the read more link&nbsp;</p>
+<p>	Line 17 clears the floatation of the buttons</p>
+<p>	Line 18 closes the portfolio text</p>
+<p>	Line 19 closes the entire portfolio item. Duplicating the lines from here to line 2 will generate a new item</p>
+<p>	Line 20 closes the entire fullscreen portfolio</p>
+<p>	&nbsp;</p>
+</section>
+<section id="portfolio_filterable">
+	<div class="page-header"><h3>Portfolio Filterable</h3><hr class="notop"></div>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;portfolio-filter&quot;&gt;
+    &lt;div class=&quot;portfolio-filter-categories&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;filter-category selected-filter&quot; data-rel=&quot;all-cat&quot;&gt;All&lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;filter-category&quot; data-rel=&quot;cat1&quot;&gt;Websites&lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;filter-category&quot; data-rel=&quot;cat2&quot;&gt;Flyers&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;portfolio-filter-wrapper&quot;&gt;
+        &lt;div class=&quot;cat1 all-cat portfolio-filter-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/pictures/1.jpg&quot; class=&quot;responsive-image&quot; alt=&quot;img&quot;&gt;&lt;/a&gt;
+            &lt;h4&gt;Item 1&lt;/h4&gt;
+            &lt;p class=&quot;half-bottom&quot;&gt;
+                Your Text
+            &lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;read-more-link full-bottom&quot;&gt;&lt;i class=&quot;fa fa-link&quot;&gt;&lt;/i&gt;More&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>	Line 1 creates the filterable portfolilo and houses it</p>
+<p>	Line 2 holds the portfolio categories</p>
+<p>	Line 3 is the all categories buttons. Tapping this will show all the categories. By default, this item is selected and should not be changed.&nbsp;</p>
+<p>	Line 4 and 5 are the categories. To add a new category give it the attribute&nbsp;<strong>data-rel=&quot;catVALUE&quot;</strong> with the value being a unique number. You can add more if you require, just remember, having more than 4 increase the chances of breaking the design on smaller screens.</p>
+<p>	Line 6 closes the categories</p>
+<p>	Line 7 clears the floating of the categories.</p>
+<p>	Line 8 opens the portfolio items</p>
+<p>	Line 9 is the portfolio item itself. Duplicate lines 9 to 16 to create a new portfolio item. Notice that this item has the secondary classes <b>cat1 all-cat</b> .Cat 1 is the unique category that will remain visible when clicking the data-rel=&quot;cat1&quot; button. The&nbsp;<strong>all-cat</strong>&nbsp;button will show all the portfolio items again, regardless what category they are in</p>
+<p>	Line 10 is the image shown in the portfolio. This doesn&#39;t have a gallery attached to it, but adding the class&nbsp;<strong>show-gallery&nbsp;</strong>and adding the location of your desired image in the href will enable the gallery</p>
+<p>	Line 11 is the portfolio item title</p>
+<p>	Line 12 , 13, 14 is the text of the portfolio</p>
+<p>	Line 15 is the read more link</p>
+<p>	Line 16 closes the portfolio item. Duplicating the lines &nbsp;9 to 16 will generate a new item. JUst remember to change the&nbsp;<strong>cat1 all-cat&nbsp;</strong>to the value you want for the category selected on the buttons in line 4,5.&nbsp;</p>
+<p>	Line 17 closes the portfolio items housing&nbsp;</p>
+<p>	Line 18 clsoes the entire filter portfolio.</p>
+</section>
+<section id="page_activity">
+	<div class="page-header"><h3>Page Activity</h3><hr class="notop"></div>
+<p>	An activity page is nothing more than a list of events that happened that you&#39;d like to show off!&nbsp;</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;activity-item container&quot;&gt;
+    &lt;img class=&quot;activity-item-image&quot; src=&quot;images/pictures/3s.jpg&quot; alt=&quot;img&quot;&gt;
+    &lt;h5&gt;Collin &lt;strong class=&quot;color-red-dark&quot;&gt;called&lt;/strong&gt; you.&lt;/h5&gt;
+    &lt;em&gt;&lt;i class=&quot;fa fa-phone&quot;&gt;&lt;/i&gt;13th January 2024&lt;/em&gt;
+    &lt;a href=&quot;#&quot; class=&quot;activity-item-toggle&quot;&gt;&lt;i class=&quot;fa fa-plus&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+
+    &lt;div class=&quot;activity-item-detail&quot;&gt;
+        You can add more details to your activity feed. You can add most of the items features
+        in here without any issue. Just copy and paste.
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>	&nbsp;</p>
+<p>	Line 1 opens the activity-item and adds the secondary class <b>container</b> to have a bottom added to it.&nbsp;</p>
+<p>	Line 2 is the image thumbnail of the activity</p>
+<p>	Line 3 is the of the activity. You can add classes for changing the colors as mentioned in the secondary classes chapter</p>
+<p>	Line 4 is the icon and text under the activity</p>
+<p>	Line 5 is the icon that will toggle the activity</p>
+<p>	Line 7,8,9 10 are the details of this activity if more than 1 row is not enough.&nbsp;</p>
+<p>	Line 11 closes the entire activity element. Duplicate lines 1 to 11 to create more.&nbsp;</p>
+<p>	&nbsp;</p>
+</section>
+<section id="page_calendar">
+	<div class="page-header"><h3>Page Calendar</h3><hr class="notop"></div>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;calendar-titles&quot;&gt;
+    &lt;a class=&quot;light-titles&quot; href=&quot;#&quot;&gt;S&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;M&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;T&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;W&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;T&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;F&lt;/a&gt;
+    &lt;a class=&quot;light-titles&quot; href=&quot;#&quot;&gt;S&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;decoration half-bottom&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;calendar-days&quot;&gt;
+    &lt;!-- &amp;nbsp adds a space for the single numbers, this way they can be centered in boxes --&gt;
+    &lt;a class=&quot;light-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;&amp;nbsp1&lt;/a&gt;
+    &lt;a class=&quot;clear-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;&amp;nbsp2&lt;/a&gt;
+    &lt;a class=&quot;clear-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;&amp;nbsp3&lt;/a&gt;
+    &lt;a class=&quot;clear-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;&amp;nbsp4&lt;/a&gt;
+    &lt;a class=&quot;clear-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;&amp;nbsp5&lt;/a&gt;
+    &lt;a class=&quot;clear-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;&amp;nbsp6&lt;/a&gt;
+    &lt;a class=&quot;light-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;&amp;nbsp7&lt;/a&gt;
+    &lt;a class=&quot;light-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;&amp;nbsp8&lt;/a&gt;
+    &lt;a class=&quot;clear-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;&amp;nbsp9&lt;/a&gt;
+    &lt;a class=&quot;clear-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;10&lt;/a&gt;
+    &lt;a class=&quot;clear-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;11&lt;/a&gt;
+    &lt;a class=&quot;clear-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;12&lt;/a&gt;
+    &lt;a class=&quot;clear-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;13&lt;/a&gt;
+    &lt;a class=&quot;light-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;14&lt;/a&gt;
+    &lt;a class=&quot;light-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;15&lt;/a&gt;
+    &lt;a class=&quot;clear-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;16&lt;/a&gt;
+    &lt;a class=&quot;taken-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;17&lt;/a&gt;
+    &lt;a class=&quot;clear-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;18&lt;/a&gt;
+    &lt;a class=&quot;close-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;19&lt;/a&gt;
+    &lt;a class=&quot;clear-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;20&lt;/a&gt;
+    &lt;a class=&quot;light-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;21&lt;/a&gt;
+    &lt;a class=&quot;light-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;22&lt;/a&gt;
+    &lt;a class=&quot;clear-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;23&lt;/a&gt;
+    &lt;a class=&quot;clear-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;24&lt;/a&gt;
+    &lt;a class=&quot;clear-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;25&lt;/a&gt;
+    &lt;a class=&quot;clear-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;26&lt;/a&gt;
+    &lt;a class=&quot;clear-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;27&lt;/a&gt;
+    &lt;a class=&quot;light-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;28&lt;/a&gt;
+    &lt;a class=&quot;light-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;29&lt;/a&gt;
+    &lt;a class=&quot;clear-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;30&lt;/a&gt;
+    &lt;a class=&quot;clear-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;31&lt;/a&gt;
+    &lt;a class=&quot;light-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;&amp;nbsp1&lt;/a&gt;
+    &lt;a class=&quot;light-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;&amp;nbsp2&lt;/a&gt;
+    &lt;a class=&quot;light-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;&amp;nbsp3&lt;/a&gt;
+    &lt;a class=&quot;light-day&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;&amp;nbsp4&lt;/a&gt;
+&lt;/div&gt;</pre>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Lines 1 to 9 are the calendar days, you can rearange these as you wish. Adding light-day class to any anchor will make it look grayer, maybe signify a date that is of no importance to you or a weekenda day.&nbsp;</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Lines 13 to 50 are the calendar days. These are created by simply adding more anchor classes.&nbsp;</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	clear-day is a day with no background circle around it.</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	light-day is a day that is made to look like the days of the week, a little less dark.&nbsp;</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	taken-day will create a green circle around the day&nbsp;</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	close-day will create a red circle around the day</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;calendar-hours&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;calendar-hour calendar-hour-taken&quot;&gt;
+        &lt;strong class=&quot;cal-from&quot;&gt;0:00 AM&lt;/strong&gt;
+        &lt;strong class=&quot;cal-to&quot;&gt;  9:00 AM&lt;/strong&gt;
+        &lt;h4&gt;Closing Hours&lt;/h4&gt;
+        &lt;em&gt;&lt;i class=&quot;fa fa-map-marker&quot;&gt;&lt;/i&gt;Melbourne Victoria&lt;/em&gt;
+    &lt;/a&gt;                   
+    &lt;a href=&quot;#&quot;  class=&quot;calendar-hour calendar-hour-clear&quot;&gt;
+        &lt;strong class=&quot;cal-time&quot;&gt;10:00 AM&lt;/strong&gt;
+        &lt;h4&gt; &lt;/h4&gt;
+        &lt;em&gt; &lt;/em&gt;
+    &lt;/a&gt;                                 
+    &lt;a href=&quot;#&quot;  class=&quot;calendar-hour calendar-hour-taken&quot;&gt;
+        &lt;strong class=&quot;cal-time&quot;&gt;11:00 PM&lt;/strong&gt;
+        &lt;h4&gt;Lunch&lt;/h4&gt;
+        &lt;em&gt;&lt;i class=&quot;fa fa-cutlery&quot;&gt;&lt;/i&gt;Restaurant, Miami Beach&lt;/em&gt;
+    &lt;/a&gt;                   
+&lt;/div&gt;</pre>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 1 creates the calendar housing box.&nbsp;</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 2 to 7 is the calendar event itself. This event has a cal-from and a cal-to class. These represent the time from and the time to event. &nbsp;You can change the title in line 5 and the icon and &quot;location&quot; in line 6. Hovering this will show up as red. The hover effect is determined b the calendar-hour-taken class.&nbsp;</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 8 to 12 is an empty date. This callendar will have nothing on it, hence, hovering it will show up as green, determined by the calendar-hour-clear class.&nbsp;</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 13 to 17 is a simple date, taking only one hour on the calendar. This has the class cal-time. This will also light up red on hover due to the same calendar-hour-taken class.&nbsp;</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	&nbsp;</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	&nbsp;</p>
+</section>
+<section id="page_charts">
+	<div class="page-header"><h3>Page Charts</h3><hr class="notop"></div>
+<p>	To generate a chart you require some JS knowledge. Let&#39;s get started and explain</p>
+<p>	<strong>THE HTML for BAR CHARTS</strong></p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;container&quot; id=&quot;bar-chart&quot;&gt;
+    &lt;canvas id=&quot;generate-bar-chart&quot;&gt;&lt;/canvas&gt;
+&lt;/div&gt;  </pre>
+<p>	<strong>THE JAVASCRIPT</strong></p>
+<pre class="prettyprint lang-js linenums">
+var barChartData = { // (1) 
+    labels : [&quot;One&quot;,&quot;Two&quot;,&quot;Three&quot;,&quot;Four&quot;,&quot;Five&quot;, &quot;Six&quot;],
+    datasets : [{
+        fillColor : &quot;rgba(0,0,0,0.1)&quot;,
+        strokeColor : &quot;rgba(0,0,0,0.2)&quot;,
+        highlightFill: &quot;rgba(0,0,0,0.25)&quot;,
+        highlightStroke: &quot;rgba(0,0,0,0.25)&quot;,
+        data : [20,10,40,30,10, 80]
+    }]
+}
+
+window.onload = function(){
+    var bar_chart_1 = document.getElementById(&quot;generate-bar-chart&quot;).getContext(&quot;2d&quot;);// (2)
+    window.bar_chart_1 = new Chart(bar_chart_1).Bar(barChartData);// (3)
+};</pre>
+<p>	The most improtant part of the pie is the JS. The HTML is just a container that houses a canvas class in whihc the chart will be generated</p>
+<p>	In the JS:</p>
+<p>	Line 1, creates the variable for the chart</p>
+<p>	Line 2, creates the labels, in this case, 6 labels for the chart</p>
+<p>	Line 3 creates the data sets&nbsp;</p>
+<p>	Line 4 is the fill color of the bars</p>
+<p>	Line 5 is the border / stroke color of the charts</p>
+<p>	Line 6 is hte hover effect fill color of the chart</p>
+<p>	Line 7 is the hover efect stroke color of the chart</p>
+<p>	Line 8 is the value for each label of the chart, One - 20 | Two - 10 | Three - 40 and so on.&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	The window load parameter has a variable, give it whatever name you wish, just be sure to call it on the second line.&nbsp;</p>
+<p>	Voila! you generated a bar chart!&nbsp;</p>
+<p>	Duplicate the exact same code as above, but replace the &nbsp;variables from (1) (2) and (3) with unique new names. These variables are&nbsp;<strong>barChartData bar_chart_1&nbsp;</strong>and make sure you replace the ID from&nbsp;<strong>generate-bar-chart</strong> to a new unique one as well.&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	The absolute same principle applies for pie charts as well, but the only difference is that pie charts datasets looks a bit different in JS&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+        var pieData = [
+            {<span class="Apple-tab-span" style="white-space:pre"> </span>value: 25,<span class="Apple-tab-span" style="white-space:pre"> </span>color: &quot;#c0392b&quot;, highlight: &quot;#c0392b&quot;, label: &quot;Red&quot;<span class="Apple-tab-span" style="white-space:pre"> </span>},
+            {<span class="Apple-tab-span" style="white-space:pre"> </span>value: 20,<span class="Apple-tab-span" style="white-space:pre"> </span>color: &quot;#27ae60&quot;, highlight: &quot;#27ae60&quot;,<span class="Apple-tab-span" style="white-space:pre"> </span>label: &quot;Green&quot;<span class="Apple-tab-span" style="white-space:pre"> </span>},
+            {<span class="Apple-tab-span" style="white-space:pre"> </span>value: 15,<span class="Apple-tab-span" style="white-space:pre"> </span>color: &quot;#f39c12&quot;, highlight: &quot;#f39c12&quot;,<span class="Apple-tab-span" style="white-space:pre"> </span>label: &quot;Yellow&quot;<span class="Apple-tab-span" style="white-space:pre"> </span>},
+            {<span class="Apple-tab-span" style="white-space:pre"> </span>value: 30,<span class="Apple-tab-span" style="white-space:pre"> </span>color: &quot;#2980b9&quot;, highlight: &quot;#34495e&quot;,<span class="Apple-tab-span" style="white-space:pre"> </span>label: &quot;Dark Blue&quot;<span class="Apple-tab-span" style="white-space:pre"> </span>}
+        ];</pre>
+<p>	Each part of the pie has a different line, and values, colors, and highlights are added on separate new lines.&nbsp;</p>
+<p>	&nbsp;</p>
+</section>
+<section id="page_login">
+	<div class="page-header"><h3>Page Login</h3><hr class="notop"></div>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;page-login full-bottom&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;page-login-logo&quot;&gt;&lt;/a&gt;
+    &lt;div class=&quot;login-input&quot;&gt;
+        &lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt;
+        &lt;input type=&quot;text&quot; value=&quot;Username&quot; onfocus=&quot;if (this.value==&#39;Username&#39;) this.value = &#39;&#39;&quot; onblur=&quot;if (this.value==&#39;&#39;) this.value = &#39;Username&#39;&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;login-password&quot;&gt;
+        &lt;i class=&quot;fa fa-lock&quot;&gt;&lt;/i&gt;
+        &lt;input type=&quot;password&quot; value=&quot;password&quot; onfocus=&quot;if (this.value==&#39;password&#39;) this.value = &#39;&#39;&quot; onblur=&quot;if (this.value==&#39;&#39;) this.value = &#39;password&#39;&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;a href=&quot;#&quot; class=&quot;login-forgot&quot;&gt;&lt;i class=&quot;fa fa-eye&quot;&gt;&lt;/i&gt;Forgot Credentials&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;login-create&quot;&gt;Create Account&lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+    &lt;a href=&quot;#&quot; class=&quot;login-button button button-small button-green button-fullscreen full-bottom&quot;&gt;Login&lt;/a&gt;
+    &lt;div class=&quot;decoration&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+    &lt;a href=&quot;#&quot; class=&quot;facebook-login facebook-color&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;Login with Facebook&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;twitter-login twitter-color&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;Signin with Twitter&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;google-login google-color&quot;&gt;&lt;i class=&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;Register with Google&lt;/a&gt;
+&lt;/div&gt;</pre>
+<p>	&nbsp;</p>
+<p>	Line 1 creates the login page, and adds a full bottom. We used the full-bottom class instead of the container class because this page is centered. The container class wouldn&#39;t work in this case. you can remove the full-bottom if the login page is alone.&nbsp;</p>
+<p>	Line 2 is the login-logo. You can replace it by using CTRL + F or CMD + F in framework.css and searching for page-login-logo</p>
+<p>	Line 3,4, 5, 6 &nbsp;is the input field for the username</p>
+<p>	Line 7, 8, 9, 10 is the input field for the password&nbsp;</p>
+<p>	Line 12 is the forgot link</p>
+<p>	Line 13 is the create link</p>
+<p>	Line 14 clears the floation of buttons</p>
+<p>	Line 15 Is the login button</p>
+<p>	Line 16 is the line decoration after the button</p>
+<p>	Line 17 clears the floatation of the buttons</p>
+<p>	Line 18,19, 20 are the login with social networks buttons&nbsp;</p>
+<p>	<strong>ATTENTION</strong></p>
+<p>	This is only a page template! Using it with a CMS requires connecting it to your panel! This is NOT included in page templates.&nbsp;</p>
+<p>	&nbsp;</p>
+</section>
+<section id="page_register">
+	<div class="page-header"><h3>Page Register</h3><hr class="notop"></div>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;page-login full-bottom&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;page-login-logo&quot;&gt;&lt;/a&gt;
+    &lt;div class=&quot;login-input&quot;&gt;
+        &lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt;
+        &lt;input onfocus=&quot;if (this.value==&#39;Username&#39;) this.value = &#39;&#39;&quot; onblur=&quot;if (this.value==&#39;&#39;) this.value = &#39;Username&#39;&quot; type=&quot;text&quot; value=&quot;Username&quot;&gt;
+    &lt;/div&gt;                    
+
+    &lt;div class=&quot;login-mail&quot;&gt;
+        &lt;i class=&quot;fa fa-envelope-o&quot;&gt;&lt;/i&gt;
+        &lt;input onfocus=&quot;if (this.value==&#39;E-Mail&#39;) this.value = &#39;&#39;&quot; onblur=&quot;if (this.value==&#39;&#39;) this.value = &#39;E-Mail&#39;&quot; type=&quot;email&quot; value=&quot;E-Mail&quot;&gt;
+    &lt;/div&gt;                    
+
+    &lt;div class=&quot;login-date&quot;&gt;
+        &lt;i class=&quot;fa fa-calendar-o&quot;&gt;&lt;/i&gt;
+        &lt;input class=&quot;set-today&quot; type=&quot;date&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;login-password&quot;&gt;
+        &lt;i class=&quot;fa fa-lock&quot;&gt;&lt;/i&gt;
+        &lt;input onfocus=&quot;if (this.value==&#39;password&#39;) this.value = &#39;&#39;&quot; onblur=&quot;if (this.value==&#39;&#39;) this.value = &#39;password&#39;&quot; type=&quot;password&quot; value=&quot;password&quot;&gt;
+    &lt;/div&gt;
+    &lt;a href=&quot;#&quot; class=&quot;login-already&quot;&gt;Already Registered?&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;login-button button button-small button-green button-fullscreen full-bottom&quot;&gt;Register&lt;/a&gt;
+&lt;/div&gt;</pre>
+<p>	The register page uses the same main classes as the login page.</p>
+<p>	Line 1 opens the login page and adds a full-bottom to it. If you don&#39;t have anytother content you can remove the full-bottom secondary class</p>
+<p>	Line 2 is teh page-login-logo, you can replace it by opening framework.css and CTRL + F or CMD + F to locate page-login-logo.&nbsp;</p>
+<p>	Line 3, 4, 5, 6 is the username field</p>
+<p>	Line 8, 9 ,10, 11 is the password field</p>
+<p>	Line 13, 14, 15, 16 is the date. The clas set-today changes the date to today&#39;s date by default.</p>
+<p>	Line 18 19 20 21 is the password field</p>
+<p>	Line 22 is the button for already registerd users</p>
+<p>	Line 23 is the button to initiate registration.&nbsp;</p>
+<p>	<strong>NOTE&nbsp;</strong></p>
+<p>	This is a <strong>site template</strong>, so this page is just a template! Connecting this page to a CMS requires Databases which are not included!&nbsp;</p>
+</section>
+<section id="page_map">
+	<div class="page-header"><h3>Page Map</h3><hr class="notop"></div>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;map-fullscreen container-fullscreen&quot;&gt;
+    &lt;div class=&quot;map-text&quot;&gt;
+        &lt;h3&gt;Get in touch!&lt;/h3&gt;
+        &lt;p&gt;
+            Tap to interact with the map, you can disable it easily to continue reading
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;a class=&quot;deactivate-map button button-red button-fullscreen&quot; href=&quot;#&quot;&gt;Turn Off Map&lt;/a&gt;
+    &lt;div class=&quot;bg-black map-overlay&quot;&gt;&lt;/div&gt;
+    &lt;iframe src=&quot;https://maps.google.com/?ie=UTF8&amp;amp;ll=47.595131,-122.330414&amp;amp;spn=0.006186,0.016512&amp;amp;t=h&amp;amp;z=17&amp;amp;output=embed&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;</pre>
+<p>	Using a fullscreen google map embed is easy. You can use the Google API as well but we didn&#39;t incorporate it by default since the API changes quite often and can cause hassles to you.&nbsp;</p>
+<p>	Line 1 is the map-fullscreen and the secondary class&nbsp;<strong>container-fullscreen&nbsp;</strong>expands the map from edge to edge</p>
+<p>	Line 2 creates the map text that is over the map, prior to activation.&nbsp;</p>
+<p>	Line 3 is the title</p>
+<p>	Line 4, 5, 6 is the text</p>
+<p>	Line 7 closes the map overlay text</p>
+<p>	Line 8 is the button that deactivates the map once you click the text and it activates</p>
+<p>	Line &nbsp;9 is the iframe with the link to your map, which you can generate on Google Maps Website.</p>
+<p>	&nbsp;</p>
+<p>	Why did we make the map activatable and deactivatable? Because the map scrolls. And having the map set to fullscreen and scrollable would render the page unusable if there is anyother content underneeth it.&nbsp;</p>
+</section>
+<section id="page_reviews">
+	<div class="page-header"><h3>Page Reviews</h3><hr class="notop"></div>
+<p>	Reviews are just like quotes, but can house much more information!&nbsp;</p>
+<p>	&nbsp;</p>
+<h4 id="page_reviews_review_style_1_nbsp">Review Style 1&nbsp;</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;review-1 container&quot;&gt;
+    &lt;strong&gt;5.00&lt;/strong&gt;&lt;em&gt;John Doe Said:&lt;/em&gt;
+    &lt;br&gt;
+    &lt;div class=&quot;review-stars&quot;&gt;
+        &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;img class=&quot;review-image&quot; src=&quot;images/pictures/3s.jpg&quot; alt=&quot;img&quot;&gt;
+    &lt;p&gt;
+        Review Text
+    &lt;/p&gt;
+    &lt;a href=&quot;#&quot;&gt;By aboyington on &lt;u&gt;Swipebox Mobile &amp; Tablet&lt;/u&gt;&lt;/a&gt;
+&lt;/div&gt;  </pre>
+<p>	Line 1 opens the review style 1. The container asures a bottom margin</p>
+<p>	Line 2 is the rating given and what the user said</p>
+<p>	Line 3 breaks the line</p>
+<p>	Line 4, 5, 6, 7, 8, 9, 10, are the star ratings. You can use fa-star-o and fa-star-half to change the stars.</p>
+<p>	Line 11 is the thumbnail image</p>
+<p>	Line 12, 13, 14 is the review text</p>
+<p>	Line 15 is the rater and rated item</p>
+<p>	Line 16 closes review style 1.</p>
+<p>	Duplicate the entire 1 to 16 lines to create another element&nbsp;</p>
+<h4 id="page_reviews_review_style_2">Review Style 2</h4>
+<p>	Uses the same code as review-style-1 just the elements are possition in a different place when the design is rendered</p>
+<h4 id="page_reviews_review_style_3">Review Style 3</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;review-3&quot;&gt;
+        &lt;div class=&quot;one-half-responsive&quot;&gt;
+            &lt;h4&gt;John Doe said:&lt;/h4&gt;
+            &lt;h5&gt;A few words from our customer&lt;/h5&gt;
+            &lt;p&gt;
+               Review Text
+            &lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;one-half-responsive last-column&quot;&gt;
+            &lt;div class=&quot;review-line&quot;&gt;
+                &lt;strong&gt;Performance&lt;/strong&gt;
+                &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;                        
+
+            &lt;div class=&quot;review-line&quot;&gt;
+                &lt;strong&gt;Documentation&lt;/strong&gt;
+                &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;                        
+
+            &lt;div class=&quot;review-line&quot;&gt;
+                &lt;strong&gt;Loading Speed&lt;/strong&gt;
+                &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;                        
+
+            &lt;div class=&quot;review-line&quot;&gt;
+                &lt;strong&gt;Code Quality &lt;/strong&gt;
+                &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;                            
+
+            &lt;div class=&quot;review-line&quot;&gt;
+                &lt;strong&gt;No Stars Here &lt;/strong&gt;
+                &lt;i class=&quot;fa fa-star-o&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;fa fa-star-o&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;fa fa-star-o&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;fa fa-star-o&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;fa fa-star-o&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;review-line-last&quot;&gt;
+                &lt;strong&gt;Overall Rating&lt;/strong&gt;
+                &lt;i class=&quot;fa fa-star-o&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;    
+        &lt;/div&gt;
+        &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;                   
+&lt;/div&gt;</pre>
+<p>	This review gives the ability to add specific information about elements&nbsp;</p>
+<p>	Line 1 creates a contaienr to house everything in, this is because the elements inside are floated to the left and we need to clear them afterwards</p>
+<p>	Line 2 is the review 3 housing box</p>
+<p>	Line 3 is the first half of the review on tablets. This containers the text, the review text, and the author</p>
+<p>	Line 11 holds the second part of the text, which holds the stars and the stars on each individual aspect</p>
+<p>	These are added in individual divs called review-line&nbsp;</p>
+<h4 id="page_reviews_review_4_and_review_5">Review 4 and Review 5</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;review-4&quot;&gt;
+    &lt;img src=&quot;images/pictures/1s.jpg&quot; alt=&quot;img&quot;&gt;
+    &lt;h4&gt;Alexander Q.&lt;/h4&gt;
+    &lt;div class=&quot;review-stars&quot;&gt;
+        &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+    &lt;p&gt;
+        &lt;strong&gt;PROS:&lt;/strong&gt;
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia mauris est. 
+        Etiam eget sollicitudin augue, ut tristique lectus.
+    &lt;/p&gt;                        
+    &lt;p&gt;
+        &lt;strong&gt;CONS:&lt;/strong&gt;
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia mauris est. 
+        Etiam eget sollicitudin augue, ut tristique lectus.
+    &lt;/p&gt;                        
+
+    &lt;p&gt;
+        &lt;strong&gt;OVERALL:&lt;/strong&gt;
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia mauris est. 
+        Etiam eget sollicitudin augue, ut tristique lectus.
+    &lt;/p&gt;
+&lt;/div&gt;   </pre>
+<p>	This review has a an image thumbnail, a title of the author, the star rating and after these elements are added, you can add indivdual parapraphs to describe each aspect of being reviewed. Review and Review 5 are basically the same structure wise, their designs differ when rendered.&nbsp;</p>
+<h4 id="page_reviews_review_6">Review 6</h4>
+<p>	&nbsp;</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;review-6&quot;&gt;
+    &lt;h4&gt;
+        &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt; 
+        Worth 5 stars for code quality, design, and documentation. 
+        Keep your hard work and produce more quality themes! I&#39;m so 
+        happy with my purchase!
+    &lt;/h4&gt;
+
+    &lt;div class=&quot;review-stars&quot;&gt;
+        &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;strong&gt;ThemeForest Buyer&lt;/strong&gt;
+&lt;/div&gt;  </pre>
+<p>	The 6th review style includes a large centered text for the review message, with an icon at the top</p>
+<p>	The bottom includes the star ratings and the author that said it.&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+</section>
+<section id="pageapp_checklist_tasklist">
+	<div class="page-header"><h3>PageApp Checklist & Tasklist</h3><hr class="notop"></div>
+<h4 id="pageapp_checklist_tasklist_square_checklist">Square Checklist</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;a href=&quot;#&quot; class=&quot;checklist-square checklist-square-selected&quot;&gt;Prepare a Design&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;checklist-square&quot;&gt;Optimize for Mobiles&lt;/a&gt;</pre>
+<p>
+	The first line has the selected secondary class&nbsp;<strong>checkist-square-selected</strong> the second class is an unselected element</p>
+<h4 id="pageapp_checklist_tasklist_round_checklist">Round Checklist</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;a href=&quot;#&quot; class=&quot;checklist-round&quot;&gt;Prepare a Design&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;checklist-round checklist-round-selected&quot;&gt;Optimize for Mobiles&lt;/a&gt;</pre>
+<p>
+	Same as the above, the class&nbsp;<strong>checklist-round-selected&nbsp;</strong>selects the checklist.&nbsp;</p>
+<h4 id="pageapp_checklist_tasklist_tasklist_item">Tasklist Item</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;a href=&quot;#&quot; class=&quot;tasklist-item&quot;&gt;
+    &lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;
+    &lt;h5&gt;Optimize for Mobiles&lt;/h5&gt;
+&lt;/a&gt;  </pre>
+<p>
+	The tasklist-item can have some aditional classes that are important.&nbsp;</p>
+<p>
+	<strong>tasklist-completed</strong>&nbsp;- makes the item complete</p>
+<p>
+	<strong>tasklist-green, tasklist-blue, tasklist-green, tasklist-yellow, tasklist-orange, tasklist-magenta -&nbsp;</strong>change the color of the border to the left of the tasklist item</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="pageapp_reminders">
+	<div class="page-header"><h3>PageApp Reminders</h3><hr class="notop"></div>
+<h4 id="pageapp_reminders_square_reminders">Square Reminders</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;a href=&quot;#&quot; class=&quot;reminder reminder-check-square&quot;&gt;
+    &lt;strong&gt;Design New Features&lt;/strong&gt;
+    &lt;em&gt;&lt;i class=&quot;fa fa-clock-o&quot;&gt;&lt;/i&gt;Tue, 25 August, 2030&lt;/em&gt;
+&lt;/a&gt;                
+
+&lt;a href=&quot;#&quot; class=&quot;reminder reminder-check-square reminder-check-square-selected&quot;&gt;
+    &lt;strong&gt;Create Simple Code&lt;/strong&gt;
+    &lt;em&gt;&lt;i class=&quot;fa fa-clock-o&quot;&gt;&lt;/i&gt;Tue, 25 August, 2030&lt;/em&gt;
+&lt;/a&gt;  </pre>
+<p>	The first 4 lins are a reminder that is pending, taping it will make it less visible / completed</p>
+<p>	The last 4 lines, are a reminder that is completed, it has the class&nbsp;<strong>reminder-check-square-selected</strong></p>
+<p>	&nbsp;</p>
+<h4 id="pageapp_reminders_round_reminders">Round Reminders</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;a href=&quot;#&quot; class=&quot;reminder reminder-check-round reminder-check-round-selected&quot;&gt;
+    &lt;strong&gt;Design New Features&lt;/strong&gt;
+    &lt;em&gt;&lt;i class=&quot;fa fa-clock-o&quot;&gt;&lt;/i&gt;Tue, 25 August, 2030&lt;/em&gt;
+&lt;/a&gt;                
+
+&lt;a href=&quot;#&quot; class=&quot;reminder reminder-check-round&quot;&gt;
+    &lt;strong&gt;Create Simple Code&lt;/strong&gt;
+    &lt;em&gt;&lt;i class=&quot;fa fa-clock-o&quot;&gt;&lt;/i&gt;Tue, 25 August, 2030&lt;/em&gt;
+&lt;/a&gt;  </pre>
+<p>	The first 4 lins are a reminder that is pending, taping it will make it less visible / completed</p>
+<p>	The last 4 lines, are a reminder that is completed, it has the class&nbsp;<strong>reminder-check-round-selected</strong></p>
+</section>
+<section id="pageapp_error">
+	<div class="page-header"><h3>PageApp Error</h3><hr class="notop"></div>
+<pre class="prettyprint lang-html linenums">
+            &lt;div class=&quot;error-page bg-3 cover-screen&quot;&gt;    
+                &lt;div class=&quot;error-content cover-center&quot;&gt;
+                    &lt;div class=&quot;unboxed-layout&quot;&gt;
+                        &lt;h3&gt;404 Error&lt;/h3&gt;
+                        &lt;h4&gt;Nothing to see, move along!&lt;/h4&gt;
+                        &lt;p&gt;
+                            Let&#39;s pretend this never happend and show you some lovely other page
+                            like the homepage for example? It&#39;s just a 404 error, you know!
+                        &lt;/p&gt;
+                        &lt;a href=&quot;#&quot; class=&quot;back-home&quot;&gt;&lt;i class=&quot;fa fa-home&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;overlay bg-black&quot;&gt;&lt;/div&gt;
+                &lt;a href=&quot;#&quot; class=&quot;left-button&quot;&gt;&lt;i class=&quot;fa fa-home&quot;&gt;&lt;/i&gt;Back Home&lt;/a&gt;
+                &lt;a href=&quot;#&quot; class=&quot;right-button&quot;&gt;Boxed Version &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;/div&gt;</pre>
+<p>	&nbsp;</p>
+<p>	The error page is very, very simple to use. It gets added inside the <b>id=&quot;content&quot;</b> and is not to be added inside containers or content classes. This page will expand the full width and height of the screen.&nbsp;</p>
+<p>	Line 1 has the class-error page that generates the elements within it and the secondary classes <b>bg-3&nbsp;</b>and&nbsp;<strong>cover-screen</strong>. bg-3 represents the background-image used ( can be changed within framework.css ) and&nbsp;<strong>cover-screen&nbsp;</strong>is a variable used by JS to expand to the full size of the screen</p>
+<p>	Line 2 is the wrapper content of the internal text and icon of the error page. The aditional&nbsp;<strong>cover-center</strong> class is used to aling the content to the center of the screen</p>
+<p>	Line 3&nbsp;<strong>unboxed-layout</strong> represents if you want to have a image for a background, or a boxed white background text for a background. Replace&nbsp;<strong>unboxed-layout&nbsp;</strong>with&nbsp;<strong>boxed-layout</strong> to change between them</p>
+<p>	Line 4 is the page title.</p>
+<p>	Line 5 is the subtitle</p>
+<p>	Line 6 is the text of the page</p>
+<p>	Line 7 is the button to take the user back home. You must replace the href with the location of the homepage</p>
+<p>	Line 8 closes teh unboxed/boxed layout</p>
+<p>	Line 8 closes the centering of the elements</p>
+<p>	Line 9 adds a background overlay</p>
+<p>	Line 10 is the button on the bottom to the left for more actions</p>
+<p>	Line 11 is the button on the bottom to the right for more actions</p>
+<p>	Line &nbsp;12 closes the entire error page!&nbsp;</p>
+<p>	Voiila! you have a 404 page!&nbsp;</p>
+</section>
+<section id="pageapp_soon">
+	<div class="page-header"><h3>PageApp Soon</h3><hr class="notop"></div>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;countdown-page bg-5 cover-screen&quot;&gt;    
+    &lt;div class=&quot;countdown-content cover-center&quot;&gt;
+        &lt;div class=&quot;unboxed-layout&quot;&gt;
+            &lt;h3&gt;Coming Soon&lt;/h3&gt;
+            &lt;h4&gt;We&#39;re working really hard on it!&lt;/h4&gt;
+            &lt;p&gt;
+                We&#39;re working really hard to bring you this as fast as we can! Here&#39;s
+                an estimate on completion!
+            &lt;/p&gt;
+            &lt;div class=&quot;countdown-class&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;overlay bg-black&quot;&gt;&lt;/div&gt;
+    &lt;a href=&quot;#&quot; class=&quot;left-button&quot;&gt;&lt;i class=&quot;fa fa-home&quot;&gt;&lt;/i&gt;Back Home&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;right-button&quot;&gt;Boxed Version &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/div&gt;</pre>
+<p>	Like the error page, this page must be added just inside the&nbsp;<strong>id=&quot;content&quot;</strong> and not inside containers and content classes.&nbsp;</p>
+<p>	Line 1 has the class-error page that generates the elements within it and the secondary classes&nbsp;<b>bg-3&nbsp;</b>and&nbsp;<strong>cover-screen</strong>. bg-3 represents the background-image used ( can be changed within framework.css ) and&nbsp;<strong>cover-screen&nbsp;</strong>is a variable used by JS to expand to the full size of the screen</p>
+<p>	Line 2 is the wrapper content of the internal text and icon of the error page. The aditional&nbsp;<strong>cover-center</strong>&nbsp;class is used to aling the content to the center of the screen</p>
+<p>	Line 3&nbsp;<strong>unboxed-layout</strong>&nbsp;represents if you want to have a image for a background, or a boxed white background text for a background. Replace&nbsp;<strong>unboxed-layout&nbsp;</strong>with&nbsp;<strong>boxed-layout</strong>&nbsp;to change between them</p>
+<p>	Line 4 is the title</p>
+<p>	Line 5 is the subtitle</p>
+<p>	Line 6, 7, 8 9 is the text of the page</p>
+<p>	Line 10 is the countdown timer itself. To change the date, go to custom.js and locate this code&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+var endDate = &quot;June 7, 2015 15:03:25&quot;;
+    $(function() {
+        $(&#39;.countdown-class&#39;).countdown({
+            date: &quot;June 7, 2087 15:03:26&quot;
+        });
+    });</pre>
+<p>	Replace the date there with your finish date</p>
+<p>	Line 11 clears the flotation of the countdown elements</p>
+<p>	Line 12 closes the boxed/unboxed layout</p>
+<p>	Line 13 closes the countodnw centered content&nbsp;</p>
+<p>	Line 14 adds a overlay to the background&nbsp;</p>
+<p>	Line 15 is the button on the bottom to the left for more actions</p>
+<p>	Line 16 is the button on the bottom to the right for more actions</p>
+<p>	Line &nbsp;17 closes the entire error page!&nbsp;</p>
+<p>	&nbsp;</p>
+</section>
+<section id="pageapp_signup">
+	<div class="page-header"><h3>PageApp Signup</h3><hr class="notop"></div>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;pageapp-signup bg-5 cover-screen&quot;&gt;    
+    &lt;div class=&quot;pageapp-signup-content cover-center&quot;&gt;
+        &lt;div class=&quot;unboxed-layout&quot;&gt;
+            &lt;a class=&quot;pageapp-signup-logo&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+
+            &lt;div class=&quot;pageapp-signup-field&quot;&gt;
+                &lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt;
+                &lt;input onfocus=&quot;if (this.value==&#39;Username&#39;) this.value = &#39;&#39;&quot; onblur=&quot;if (this.value==&#39;&#39;) this.value = &#39;Username&#39;&quot; type=&quot;text&quot; value=&quot;Username&quot;&gt;
+            &lt;/div&gt;                    
+
+            &lt;div class=&quot;pageapp-signup-field&quot;&gt;
+                &lt;i class=&quot;fa fa-envelope-o&quot;&gt;&lt;/i&gt;
+                &lt;input onfocus=&quot;if (this.value==&#39;E-Mail&#39;) this.value = &#39;&#39;&quot; onblur=&quot;if (this.value==&#39;&#39;) this.value = &#39;E-Mail&#39;&quot; type=&quot;email&quot; value=&quot;E-Mail&quot;&gt;
+            &lt;/div&gt;                    
+
+            &lt;div class=&quot;pageapp-signup-field&quot;&gt;
+                &lt;i class=&quot;fa fa-calendar-o&quot;&gt;&lt;/i&gt;
+                &lt;input class=&quot;set-today&quot; type=&quot;date&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;pageapp-signup-field&quot;&gt;
+                &lt;i class=&quot;fa fa-lock&quot;&gt;&lt;/i&gt;
+                &lt;input onfocus=&quot;if (this.value==&#39;password&#39;) this.value = &#39;&#39;&quot; onblur=&quot;if (this.value==&#39;&#39;) this.value = &#39;password&#39;&quot; type=&quot;password&quot; value=&quot;password&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;a href=&quot;#&quot; class=&quot;pageapp-signup-button button button-small button-green button-fullscreen&quot;&gt;Register&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;overlay bg-black&quot;&gt;&lt;/div&gt;
+    &lt;a href=&quot;#&quot; class=&quot;left-button&quot;&gt;&lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt;Alredy registerd?&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;right-button&quot;&gt;Page Version &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/div&gt;</pre>
+<p>	&nbsp;</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	The signup page is very, very simple to use. it gets added inside the&nbsp;<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">id=&quot;content&quot;&nbsp;</span>and is not to be adde inside container or contet classes. This page will expand to the full width and height of the screen</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; vertical-align: baseline; line-height: 1.5em;">Line 1 has the pageapp-signup page that generates the elements within it and the secondary classes&nbsp;</span><b style="line-height: 1.5em;">bg-5&nbsp;</b><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; vertical-align: baseline; line-height: 1.5em;">and&nbsp;</span><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline; line-height: 1.5em;">cover-screen</span><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; vertical-align: baseline; line-height: 1.5em;">. bg-3 represents the background-image used ( can be changed within framework.css ) and&nbsp;</span><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline; line-height: 1.5em;">cover-screen&nbsp;</span><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; vertical-align: baseline; line-height: 1.5em;">is a variable used by JS to expand to the full size of the screen</span></p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 2 is the wrapper content of the internal text and icon of the error page. The aditional&nbsp;<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">cover-center</span>&nbsp;class is used to aling the content to the center of the screen</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 3&nbsp;<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">unboxed-layout</span>&nbsp;represents if you want to have a image for a background, or a boxed white background text for a background. Replace&nbsp;<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">unboxed-layout&nbsp;</span>with&nbsp;<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">boxed-layout</span>&nbsp;to change between them</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 4 is the page logo. &nbsp;To change it open framework.css and locate pageapp-signup-logo.</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Lines 6 7 8 9 are the username field.</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Lines 11 12 13 14 are the email field</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Lines 16 17 18 19 are the calendar field. The class set-date will set the current date using JS</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Lines 21 22 23 24 are the password field.</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 25 is the register button</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 26 closes the unboxed layout</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 27 closes the cover-center&nbsp;</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 28 is the dark overlay</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 29 and 30 are the buttons are the bottom left and right of the screen</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 31 closes the page-signup wrapper / cover-center</p>
+<p>	&nbsp;</p>
+</section>
+<section id="pageapp_login">
+	<div class="page-header"><h3>PageApp Login</h3><hr class="notop"></div>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;pageapp-login bg-5 cover-screen&quot;&gt;    
+    &lt;div class=&quot;pageapp-login-content cover-center&quot;&gt;
+        &lt;div class=&quot;unboxed-layout&quot;&gt;
+            &lt;a class=&quot;pageapp-login-logo&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+
+            &lt;div class=&quot;pageapp-login-field&quot;&gt;
+                &lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt;
+                &lt;input type=&quot;text&quot; value=&quot;Username&quot; onfocus=&quot;if (this.value==&#39;Username&#39;) this.value = &#39;&#39;&quot; onblur=&quot;if (this.value==&#39;&#39;) this.value = &#39;Username&#39;&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;pageapp-login-field&quot;&gt;
+                &lt;i class=&quot;fa fa-lock&quot;&gt;&lt;/i&gt;
+                &lt;input type=&quot;password&quot; value=&quot;password&quot; onfocus=&quot;if (this.value==&#39;password&#39;) this.value = &#39;&#39;&quot; onblur=&quot;if (this.value==&#39;&#39;) this.value = &#39;password&#39;&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;a href=&quot;#&quot; class=&quot;pageapp-login-button button button-small button-green button-fullscreen&quot;&gt;Login&lt;/a&gt;
+            &lt;div class=&quot;decoration&quot;&gt;&lt;/div&gt;
+            &lt;a href=&quot;#&quot; class=&quot;facebook-login facebook-color&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;Login with Facebook&lt;/a&gt;
+            &lt;a href=&quot;#&quot; class=&quot;twitter-login twitter-color no-bottom&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;Signin with Twitter&lt;/a&gt;                    
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;overlay bg-black&quot;&gt;&lt;/div&gt;
+    &lt;a href=&quot;#&quot; class=&quot;left-button&quot;&gt;&lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt;Don&#39;t have an account?&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;right-button&quot;&gt;Page Version &lt;i class=&quot;fa fa-star&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/div&gt;</pre>
+<p>	<span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; line-height: 1.5em;">The login page is very, very simple to use. it gets added inside the&nbsp;</span><span style="color: rgb(56, 56, 56); font-family: inherit; line-height: 1.5em; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; vertical-align: baseline;">id=&quot;content&quot;&nbsp;</span><span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; line-height: 1.5em;">and is not to be adde inside container or contet classes. This page will expand to the full width and height of the screen</span></p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; line-height: 1.5em;">Line 1 has the pageapp-signup page that generates the elements within it and the secondary classes&nbsp;</span><b style="line-height: 1.5em;">bg-5&nbsp;</b><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; line-height: 1.5em;">and&nbsp;</span><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline; line-height: 1.5em;">cover-screen</span><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; line-height: 1.5em;">. bg-3 represents the background-image used ( can be changed within framework.css ) and&nbsp;</span><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline; line-height: 1.5em;">cover-screen&nbsp;</span><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; line-height: 1.5em;">is a variable used by JS to expand to the full size of the screen</span></p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 2 is the wrapper content of the internal text and icon of the error page. The aditional&nbsp;<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">cover-center</span>&nbsp;class is used to aling the content to the center of the screen</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 3&nbsp;<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">unboxed-layout</span>&nbsp;represents if you want to have a image for a background, or a boxed white background text for a background. Replace&nbsp;<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">unboxed-layout&nbsp;</span>with&nbsp;<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">boxed-layout</span>&nbsp;to change between them.</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 4 is the page logo. &nbsp;To change it open framework.css and locate pageapp-login-logo.</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 6 7 8 9 is the username field</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 11 12 13 14 is the password field</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 16 is the login button</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 17 is the decoration under the login button</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 18 and 19 are the social login buttons</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 20 closes the unboxed layout</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 22 is the overlay</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 23 and 24 are the bottom buttons</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 25 closes the login page completly.</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+</section>
+<section id="pageapp_coverpage">
+	<div class="page-header"><h3>PageApp Coverpage</h3><hr class="notop"></div>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;container-fullscreen coverpage-slider&quot;&gt;
+
+&lt;!--Slides Go Here --&gt;
+
+&lt;/div&gt;</pre>
+<p>	&nbsp;</p>
+<p>	The coverpage is structured in a very easy fashion. The above structure houses different slides, that the user can swipe through</p>
+<p>	&nbsp;</p>
+<h4 id="pageapp_coverpage_center_cover_slide">Center Cover Slide</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;cover-slide cover-screen bg-5&quot;&gt;
+    &lt;div class=&quot;cover-center&quot;&gt;
+        &lt;i class=&quot;fa fa-cog cover-icon-center cover-icon-round full-bottom&quot;&gt;&lt;/i&gt;
+        &lt;h3 class=&quot;center-text bold uppercase&quot;&gt;Coverpages&lt;/h3&gt;
+        &lt;p class=&quot;center-text&quot;&gt;
+            We love building awesome stuff, and nothing 
+            says awesome stuff like a coverpage slider!
+        &lt;/p&gt;
+        &lt;a href=&quot;#&quot; class=&quot;button button-cover button-center&quot;&gt;Read More&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;overlay bg-black&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>	Line 1 creates the slide, covers the screen using&nbsp;<strong>cover-screen&nbsp;</strong>and adds the background&nbsp;<strong>bg-5&nbsp;</strong>that can be edited in framework.css&nbsp;</p>
+<p>	Line 2 creates a center slide</p>
+<p>	Line 3 is the icon</p>
+<p>	Line 4 is the title</p>
+<p>	Line 5, 6, 7, 8 is the text</p>
+<p>	Line 9 is the button</p>
+<p>	Line 10 closes the center cover</p>
+<p>	Line 11 is the overlay</p>
+<p>	Line 12 closes the slide.</p>
+<h4 id="pageapp_coverpage_left_right_cover_slide">Left / Right Cover Slide</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;cover-slide cover-screen bg-6&quot;&gt;
+    &lt;div class=&quot;cover-left&quot;&gt;
+        &lt;h2 class=&quot;ultrabold&quot;&gt;
+            FIND&lt;br&gt;
+            THE&lt;br&gt;
+            PERFECT&lt;br&gt;
+            DESIGN
+        &lt;/h2&gt;
+        &lt;p&gt;
+            Play along with the coverpage&lt;br&gt;
+            to find the perfect design&lt;br&gt;
+            that suits you!
+        &lt;/p&gt;
+        &lt;a href=&quot;#&quot; class=&quot;button button-cover&quot;&gt;Read More&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;overlay bg-black&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>	Line 1 creates the slide, covers the screen using&nbsp;<strong>cover-screen&nbsp;</strong>and adds the background&nbsp;<strong>bg-5&nbsp;</strong>that can be edited in framework.css&nbsp;</p>
+<p>	Line 2 creates a left slide, to change it to a right slide replace&nbsp;<strong>cover-left&nbsp;</strong>with&nbsp;<strong>cover-right</strong></p>
+<p>	Line 3 4 5 6 7 8 creates the large text. The secondary class&nbsp;<strong>ultrabold&nbsp;</strong>is explained the secondary classes chapter.</p>
+<p>	Line 9 10 11 12 13 creates the paragraph</p>
+<p>	Line 14 creates the button</p>
+<p>	Line 15 closes the cover left</p>
+<p>	Line 16 is the overlay for the cover slide.&nbsp;</p>
+</section>
+<section id="the_end">
+	<div class="page-header"><h3>The end? </h3><hr class="notop"></div>
+<p>	This is the second part of the docuemntation! The last part deals with simple things like the menus structure, changing the main logo and the sliders present in the template you purchased!&nbsp;</p>
+<p>	The features you&#39;ve read so far are structure and framework related!&nbsp;</p>
+</section>
+
+	</div>
+</body>
+</html>
