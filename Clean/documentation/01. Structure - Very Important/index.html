@@ -1,0 +1,977 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Framework Docuemntation  - Enabled's Epsilon Mobile and Tablet Framework</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="Enabled">
+	<meta name="copyright" content="Enabled">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2015-07-15T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#0000FF;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #0088CC #0088CC #bfbfbf;
+		  background-color: #0044CC;
+		}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ul{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ul a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ul a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-framework-docuemntation-">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#introduction" title="Introduction">Introduction</a></li>
+			<li><a href="#structure" title="Structure">Structure</a></li>
+			<li><a href="#content_structure" title="Content Structure">Content Structure</a>
+				<ul>
+					<li><a href="#content_structure_strongthe_main_content_class_strong">The Main Content Class:</a>
+					<li><a href="#content_structure_strongboxed_container_class_strong">Boxed Container Class</a>
+					<li><a href="#content_structure_bunboxed_container_full_width_container_class_b">Unboxed Container | Full Width Container Class</a>
+				</ul>
+			</li>
+			<li><a href="#column_structure" title="Column Structure">Column Structure</a>
+				<ul>
+					<li><a href="#column_structure_stronguniversal_columns,_both_mobile_and_tablet_strong">Universal Columns, both Mobile and Tablet</a>
+					<li><a href="#column_structure_strongcolumns_that_transform_rows_on_mobile,_columms_on_tablet_strong">Columns that transform. Rows on Mobile, Columms on Tablet</a>
+				</ul>
+			</li>
+			<li><a href="#using_font_awesome_the_i_class_fa_things" title="Using Font Awesome ( the i class fa things )">Using Font Awesome ( the i class fa things )</a>
+				<ul>
+					<li><a href="#using_font_awesome_the_i_class_fa_things_how_to_use_font_awesome_nothing_easier!_nbsp">How to use font-awesome? Nothing easier!&nbsp;</a>
+				</ul>
+			</li>
+			<li><a href="#image_and_video_classes" title="Image and Video Classes">Image and Video Classes</a>
+				<ul>
+					<li><a href="#image_and_video_classes_responsive_images">Responsive Images</a>
+					<li><a href="#image_and_video_classes_preloading_images">Preloading Images</a>
+					<li><a href="#image_and_video_classes_responsive_video">Responsive Video</a>
+				</ul>
+			</li>
+			<li><a href="#secondary_classes" title="Secondary Classes">Secondary Classes</a>
+				<ul>
+					<li><a href="#secondary_classes_spacing">Spacing</a>
+					<li><a href="#secondary_classes_background_colors">Background Colors</a>
+					<li><a href="#secondary_classes_social_background_colors">Social Background Colors</a>
+					<li><a href="#secondary_classes_text_color">Text Color</a>
+					<li><a href="#secondary_classes_text_features">Text Features</a>
+				</ul>
+			</li>
+			<li><a href="#typography_features" title="Typography Features">Typography Features</a>
+				<ul>
+					<li><a href="#typography_features_dropcaps_nbsp">Dropcaps&nbsp;</a>
+					<li><a href="#typography_features_text_highlights">Text Highlights</a>
+					<li><a href="#typography_features_lists,_ordered,_unordered_and_icon_list">Lists, Ordered, Unordered and Icon List</a>
+					<li><a href="#typography_features_checkboxes_and_radios">Checkboxes and Radios</a>
+					<li><a href="#typography_features_text_fields">Text Fields</a>
+					<li><a href="#typography_features_text_fields_with_icons">Text Fields with Icons</a>
+					<li><a href="#typography_features_blockquotes">Blockquotes</a>
+					<li><a href="#typography_features_heading_examples">Heading examples</a>
+				</ul>
+			</li>
+			<li><a href="#jquery_features" title="jQuery Features">jQuery Features</a>
+				<ul>
+					<li><a href="#jquery_features_os_styled_toggles">OS Styled Toggles</a>
+					<li><a href="#jquery_features_regular_toggles">Regular Toggles</a>
+					<li><a href="#jquery_features_accordions">Accordions</a>
+					<li><a href="#jquery_features_tabs">Tabs</a>
+					<li><a href="#jquery_features_notifications">Notifications</a>
+					<li><a href="#jquery_features_stronglarge_notifications_strong">Large Notifications</a>
+					<li><a href="#jquery_features_strongsmall_notifications_strong">Small Notifications</a>
+					<li><a href="#jquery_features_strongfixed_top_and_bottom_notifications_strong">Fixed Top and Bottom Notifications</a>
+					<li><a href="#jquery_features_how_to_create_your_own,_you_ask_simple!_nbsp">How to create your own, you ask? Simple!&nbsp;</a>
+					<li><a href="#jquery_features_strong_n1_the_trigger_place_it_whever_you_want_nbsp_strong">(N1) The Trigger: ( Place it Whever you want )&nbsp;</a>
+					<li><a href="#jquery_features_strong_n2_the_notification_place_it_outisde_the_content,_as_explained_above_nbsp_strong">(N2) The Notification (Place it outisde the content, as explained above)&nbsp;</a>
+					<li><a href="#jquery_features__n3_the_javascript">(N3) The JavaScript</a>
+				</ul>
+			</li>
+			<li><a href="#other_features" title="Other Features">Other Features</a>
+				<ul>
+					<li><a href="#other_features_buttons!_nbsp">Buttons!&nbsp;</a>
+					<li><a href="#other_features_secondary_classes_available_for_buttons">Secondary Classes Available for Buttons</a>
+					<li><a href="#other_features_regular_button">Regular Button</a>
+					<li><a href="#other_features_regular_round_button">Regular Round Button</a>
+					<li><a href="#other_features_3d_buttons_nbsp">3D Buttons&nbsp;</a>
+					<li><a href="#other_features_icon_buttons">Icon Buttons</a>
+					<li><a href="#other_features_speach_bubbles">Speach Bubbles</a>
+					<li><a href="#other_features_this_or_that_classes">This or That Classes</a>
+					<li><a href="#other_features_style_1_button_or_button_nbsp">Style 1 ( button or button )&nbsp;</a>
+					<li><a href="#other_features_style_2_button_or_button,_bigger_">Style 2 ( button or button, bigger )</a>
+					<li><a href="#other_features_style_2_the_divider_nbsp">Style 2 ( the divider )&nbsp;</a>
+				</ul>
+			</li>
+			<li><a href="#not_the_end" title="Not the end! ">Not the end! </a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright Enabled 2015<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Framework Docuemntation </h1>
+	<h2>Enabled's Epsilon Mobile and Tablet Framework</h2>
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>created: 07/12/2015</li>
+	<li>latest update: 07/15/2015</li>
+	<li>by: Enabled</li>
+	<li><a href=""></a></li>
+	
+	</ul>
+	<p></p>
+	</section>
+	
+	<section id="introduction">
+	<div class="page-header"><h3>Introduction</h3><hr class="notop"></div>
+<p>
+	Thank you for purchasing our file, we&#39;re really happy you loved our product on sight, but we plan on making you even happier by making a docuemntation that covers all features, and gives you no headaches. We&#39;ve split the documentation into two separate parts, one that covers all the features of the framework, this one, and another one that covers the design elements of the item, the first docuemntation.</p>
+<p>
+	So, let&#39;s get started!&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	The documentation is structured as follows!&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>1. Structure Docuemntation</strong></p>
+<p>
+	The docuemntation you are currently reading, which will show you the basic features, structure, and the most important aspects of the item</p>
+<p>
+	<strong>2. Page and PageApp Docuemntation</strong></p>
+<p>
+	The documentations that show you how to use the included page templates, and how to create your own pages from the template provided.</p>
+<p>
+	<strong>3. Current Template Docuemntation</strong></p>
+<p>
+	The unique features that the template you purchased has, and how to implement them in the structure. These features can range from custom headers, custom navigations and custom sliders or column structures that get added inside the template!&nbsp;</p>
+<div class="alert alert-error">
+	It&#39;s VERY important that you read at least the&nbsp;<strong>STRUCTURE DOCUMENTATION&nbsp;</strong>and the&nbsp;<strong>CURRENT TEMPLAETE DOCUMENTATION&nbsp;</strong>before attemting to edit the template if you do not have advnaced knowledge of HTML, CSS and JS in order to properly edit the item and not run into errors!&nbsp;</div>
+</section>
+<section id="structure">
+	<div class="page-header"><h3>Structure</h3><hr class="notop"></div>
+<p>	The structure around which the item is coded is very,&nbsp;<strong>very</strong> important. It keeps everything in place and makes sure thins work smoothly on older devices as well ( Android 4.4.2 can oficially be called an old device, iOS 6 can oficially be called an old device since these devices get new software versions every few months to a year and the old version becomes unsupported by the developers )&nbsp;</p>
+<p>	In each of our products there will be a _starter template. That is contentless, empty template that consists of the main structure you should build upon, and makes it easier to understand rather than copy pasting a tone of code here and explaing it ( which we&#39;ll do anyway )&nbsp;</p>
+<p>	&nbsp;</p>
+<pre class="prettyprint lang-html linenums">
+&lt;body class=&quot;dual-sidebar&quot;&gt; &lt;!-- (1) --&gt; 
+&lt;div id=&quot;preloader&quot;&gt; &lt;!-- (2) ---&gt;
+    &lt;div id=&quot;status&quot;&gt;
+       <span class="Apple-tab-span" style="white-space:pre"> </span>&lt;p class=&quot;center-text&quot;&gt;
+            Loading the content...
+            &lt;em&gt;Loading depends on your connection speed!&lt;/em&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+  
+&lt;div class=&quot;gallery-fix&quot;&gt;&lt;/div&gt; &lt;!-- (3) --&gt;
+&lt;div id=&quot;header-fixed disabled&quot;&gt;&lt;/div&gt; &lt;!-- (4) --&gt;   
+
+&lt;div class=&quot;all-elements&quot;&gt; &lt;!-- (5) --&gt;
+    &lt;div class=&quot;snap-drawers&quot;&gt;
+        &lt;div class=&quot;snap-drawer snap-drawer-left&quot;&gt; &lt;!-- (6) --&gt;
+            Left Sidebar
+        &lt;/div&gt;
+        &lt;div class=&quot;snap-drawer snap-drawer-right&quot;&gt;&lt;!-- (7) --&gt;
+            Right Sidebar
+        &lt;/div&gt;
+        &lt;div id=&quot;content&quot; class=&quot;snap-content&quot;&gt;&lt;!-- (8) --&gt;
+            &lt;div class=&quot;content&quot;&gt;
+                &lt;!-- CONTENT STRUCTURE CHAPTER --&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;  
+    &lt;a href=&quot;#&quot; class=&quot;back-to-top-badge&quot;&gt;&lt;i class=&quot;fa fa-caret-up&quot;&gt;&lt;/i&gt;Back to top&lt;/a&gt; &lt;!-- (9) --&gt;
+&lt;/div&gt;
+&lt;!-- (10 - Remember this for later ) --&gt; 
+&lt;/body&gt;</pre>
+<p>	The above is the main structure around which the entire item is built, now, let me explain precisely why this is needed, and how each element is used. The code is commented using &lt;!-- NUMBER --&gt; to make it easier for you to see which points we&#39;re discussing.&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	(1) is the main body wrapper, as any html file, but notice it has a class called&nbsp;<strong>dual-sidebar</strong>. If this class is present, the page will automatically generate the structure for the dual sidebar functionallity, meaning, you can swipe left or right on the content to enable the sidebars. You can use&nbsp;<strong>no-sidebar&nbsp;</strong>to disable all sidebars or&nbsp;<strong>left-sidebar&nbsp;</strong>to enable only the left sidebar or&nbsp;<strong>right-sidebar</strong> to enable only the right sidebar. Each page can have a different sidebar structure by simply changing the main body class code.&nbsp;</p>
+<p>	(2) is the page preloader. This can be disabled if you find unnecessary or prefer oldschool pages by adding the class&nbsp;<strong>disabled</strong> to it or simply deleting lines 2 to 9. It&#39;s recommened you just add&nbsp;<strong>disabled</strong> to it.</p>
+<p>	(3) the&nbsp;<strong>gallery-fix</strong> class is essential for every / any page that has a gallery attached to it. Certain devices run into issues with the depth of elements presented on screen and can make the image gallery click-through-able, basically meaning, you tap the image iniside the gallery, and an event is triggered under it. The <b>gallery-fix</b> class fixes that by creating a dummy full screen transparent layer that protects you from clicking under the gallery. Too much technical terms? Just leave the gallery-fix class at the top of the page, and our code will take care of the rest!&nbsp;</p>
+<p>	(4) With this new framework, we&#39;ve finally found a solution to enable a fixed header, while at the same time keeping swiping sidebars and scrolling the page while the header is fixed. However, in order for this to work, your header must be placed at the top of the page, where it is shown in the example code above. We&#39;ve set it to&nbsp;<strong>disabled</strong> in the code since we&#39;re just explaing how it works! In a real template, it won&#39;t have the disabled class, and it will have content inside it.&nbsp;</p>
+<p>	(5) The&nbsp;<strong>all-elements</strong> class has a vital role in the functionallity of the page. It keeps the scrollbars from showing when you open the sidebars, and it&#39;s also the main housing class for all the content of the page / framework that we used!&nbsp;</p>
+<p>	(6) - (7) Are the classes the house the sidebars. Each of them will be enabled or disabled by using what&#39;s explained in (1)&nbsp;</p>
+<p>	(8) Is the <b>content ID</b>, attention,&nbsp;<strong>ID, not Class</strong>. This is unique, per page. And this is the trigger of the sidebar. This listens for swiping gestures and houses everything the framework has to offer. We&#39;ll explain more in the next chapter,&nbsp;<strong>Content Structure</strong>.&nbsp;</p>
+<p>	(9) The back to top badge, is the blue element that shows up when you scroll passed the header and almost get to the bottom of the page. This acts like a native app button, and well, has the purpose of jumping you back up!&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+</section>
+<section id="content_structure">
+	<div class="page-header"><h3>Content Structure</h3><hr class="notop"></div>
+<p>	The contet structure is pretty super simple! And this is mostly the last part where there&#39;s a tone to read! After this, we can start talking features!&nbsp;</p>
+<p>	In the structure chapter, there is a code comment&nbsp;<strong><span style="line-height: 19px;">&lt;!-- CONTENT STRUCTURE CHAPTER --&gt;&nbsp;</span></strong><span style="line-height: 19px;">and where that comment is placed, you can add everything from this point forward except if specifically mentioned not to.&nbsp;</span></p>
+<h4 id="content_structure_strongthe_main_content_class_strong"><strong>The Main Content Class:</strong></h4>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;content&quot;&gt;&lt;/div&gt;</pre>
+<p>	This class sets the left and right padding of the page using javascript, to be 30 pixels on mobiles and 50 pixels on tablets. It&#39;s esential to have to keep your page not glued to the sides of the device.&nbsp;</p>
+<h4 id="content_structure_strongboxed_container_class_strong"><strong>Boxed Container Class</strong></h4>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;container OPTIONAL_VALUES&quot;&gt;&lt;/div&gt;</pre>
+<p>	The container class can be used to add columns, text, headings and everything else you want to use, and it helps keep things neetly organized into blocks. The container class is vital for things like toggles and each one needs to be added in a sperate container, but other than that, the <b>container&nbsp;</b>classes main purpose is to add a bottom margin for a better visual hierarchy</p>
+<p>	<strong>Optional Values: no-bottom, half-bottom, full-bottom</strong></p>
+<p>	Using <strong>no-bottom</strong>, will leave the container with no margin bottom to it,&nbsp;</p>
+<p>	Using <strong>half-bottom</strong>, will leave the contaner with only half the bottom of it&#39;s original full value</p>
+<p>	Using <strong>full-bottom </strong>is unnecessary for containers, since the default of a container is full-bottom ( 30 pixels )&nbsp;</p>
+<p>	These optional values can be added to absolutely every element in the template, from paragraphs to heading to fields to boxes.&nbsp;</p>
+<h4 id="content_structure_bunboxed_container_full_width_container_class_b"><b>Unboxed Container | Full Width Container Class</b></h4>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;container-fullscreen OPTIONAL_VALUES&quot;&gt;&lt;/div&gt;</pre>
+<p>	The above creates a container that is full width, ignoring it&#39;s parrents left and right margin. this can be used for things like headings or elements that you want to stretch the full width of the screen without having to close and re-open the main content class. The optional values applicable here are the ones in the container but also, a few others specific to elements such as headings, which are described in the typography chapter.&nbsp;</p>
+<p>	&nbsp;</p>
+</section>
+<section id="column_structure">
+	<div class="page-header"><h3>Column Structure</h3><hr class="notop"></div>
+<p>	Creating columns is beyond simple. We&#39;ve made columns in a language everyone understands, and with the ability to set them for mobile and tablet in different ways.&nbsp;</p>
+<p>	&nbsp;</p>
+<div class="alert alert-info">
+	Don&#39;t want to add an element to a column? It&#39;s simple! Just leave it inside a container!</div>
+<p>	&nbsp;</p>
+<hr>
+<h4 id="column_structure_stronguniversal_columns,_both_mobile_and_tablet_strong"><strong>Universal Columns, both Mobile and Tablet</strong></h4>
+<p>	<strong>2 Columns | Mobile and Tablet</strong></p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;one-half&quot;&gt;
+        Column 1 Content
+    &lt;/div&gt;
+    &lt;div class=&quot;one-half last-column&quot;&gt;
+        Column 2 Content
+    &lt;/div&gt;
+    &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>	The above structure generates a two column layout on tablets and mobiles alike.&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	<strong>3 Columns | Mobile and Tablet&nbsp;</strong></p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;one-third&quot;&gt;
+        Column 1 Content
+    &lt;/div&gt;
+    &lt;div class=&quot;one-third&quot;&gt;
+        Column 2 Content
+    &lt;/div&gt;
+    &lt;div class=&quot;one-third last-column&quot;&gt;
+        Column 3 Content
+    &lt;/div&gt;
+    &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+&lt;/div&gt; </pre>
+<p>	The above structure generates a three column layout on mobiles and tablets alike.&nbsp;</p>
+<p>	&nbsp;</p>
+<h4 id="column_structure_strongcolumns_that_transform_rows_on_mobile,_columms_on_tablet_strong"><strong>Columns that transform. Rows on Mobile, Columms on Tablet</strong></h4>
+<div>
+	<p>		<strong>2 Rows Mobile 2 Columns Tablet</strong></p>
+	<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;one-half-responsive&quot;&gt;
+        Column 1 Content
+    &lt;/div&gt;
+    &lt;div class=&quot;one-half-responsive last-column&quot;&gt;
+        Column 2 Content
+    &lt;/div&gt;
+    &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+	<p>		The above structure generates a two column layout on tablets and 2 rows on mobiles.</p>
+	<p>		&nbsp;</p>
+	<p>		<strong>3 Rows Mobile 3 Columns Tablet&nbsp;</strong></p>
+	<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;one-third-responsive&quot;&gt;
+        Column 1 Content
+    &lt;/div&gt;
+    &lt;div class=&quot;one-third-responsive&quot;&gt;
+        Column 2 Content
+    &lt;/div&gt;
+    &lt;div class=&quot;one-third-responsive last-column&quot;&gt;
+        Column 3 Content
+    &lt;/div&gt;
+    &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+&lt;/div&gt; </pre>
+	<p>		The above structure generates a three column layout on tablets, and 3 rows on mobiles.&nbsp;</p>
+	<p>		&nbsp;</p>
+	<p>		<strong>Notice:</strong></p>
+	<p>		The difference between universal columns and columns that adapt to rows and columns is the simple addition of -responsive after the name of the column you choose. So having <b>one-value</b> will generate it both for mobile and tablet and having&nbsp;<strong>one-value-responsive</strong> will generate it just for tablets and keep rows on mobiles.</p>
+	<p>		Simple enough, right? :)&nbsp;</p>
+	<p>		&nbsp;</p>
+	<p>		&nbsp;</p>
+	<p>		&nbsp;</p>
+	<p>		&nbsp;</p>
+	<p>		&nbsp;</p>
+	<p>		&nbsp;</p>
+	<p>		&nbsp;</p>
+	<p>		&nbsp;</p>
+	<p>		&nbsp;</p>
+</div>
+<p>	&nbsp;</p>
+</section>
+<section id="using_font_awesome_the_i_class_fa_things">
+	<div class="page-header"><h3>Using Font Awesome ( the i class fa things )</h3><hr class="notop"></div>
+<p>
+	We&#39;re using&nbsp;<strong>Font Awesome Version 4.3.0&nbsp;</strong>in our packs. To be sure that this version is curently used, check font-awesome.css in styles.&nbsp;</p>
+<p>
+	In order to update if a new version is released, download the new font-awesome pack from the font awesome page&nbsp;http://fortawesome.github.io/Font-Awesome/ The do the following</p>
+<p>
+	<b>1. Extract the files.&nbsp;</b></p>
+<p>
+	<strong>2. Copy font-awesome.css in styles css, and replace the current font-awesome.css&nbsp;</strong></p>
+<p>
+	<strong>3. Copy and paste the content of the fonts folder inside the fonts folder from our product!&nbsp;</strong></p>
+<p>
+	<strong>Voila!!&nbsp;</strong>you&#39;ve successfully updated the file!&nbsp;</p>
+<p>
+	&nbsp;</p>
+<h4 id="using_font_awesome_the_i_class_fa_things_how_to_use_font_awesome_nothing_easier!_nbsp">How to use font-awesome? Nothing easier!&nbsp;</h4>
+<p>
+	1. Everything in the item that has an i class=&quot;fa fa-<strong>value&quot;</strong>&nbsp;is an icon. the&nbsp;<strong>value</strong> can be changed to any icon you want to use that is avialalbe for your current version on this page!&nbsp;http://fortawesome.github.io/Font-Awesome/icons/</p>
+<p>
+	That&#39;s all there is to it! You even get a search bar on that page to locate icons easier! Plus! Icons are fully resizable, vectors, can stretch to any size without breaking!&nbsp;</p>
+</section>
+<section id="image_and_video_classes">
+	<div class="page-header"><h3>Image and Video Classes</h3><hr class="notop"></div>
+<p>	Image and video classes desrve a chapter of their own even though there isn&#39;t much to say about it!&nbsp;</p>
+<h4 id="image_and_video_classes_responsive_images">Responsive Images</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;img src=&quot;IMAGE_LOCATION&quot; class=&quot;responsive-image&quot; alt=&quot;img&quot;&gt;</pre>
+<p>	Adding the clas&nbsp;<strong>responsive-image</strong> to your images will extend the image to the full width of it&#39;s container while maintaining it&#39;s aspect ratio.</p>
+<h4 id="image_and_video_classes_preloading_images">Preloading Images</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;img class=&quot;preload-image responsive-image&quot; data-original=&quot;IMAGE_LOCATION&quot; alt=&quot;img&quot;&gt;</pre>
+<p>	Preloading images is done with the aid of Lazy Load. To preload an image and keep it responsive, simply use the above structure. Notice that the location of the image is no longer placed within the src attribute but inside the data-original-attribute.</p>
+<h4 id="image_and_video_classes_responsive_video">Responsive Video</h4>
+<div>
+	<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;responsive-video&quot;&gt;
+    &lt;iframe src=&quot;https://player.vimeo.com/video/7449107&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;</pre>
+</div>
+<p>	Responsive videos must folllow the structure above as they are gouverened by CSS. A div class hosusing the video with the class responsive-video and within this the iframe with the location of your video.&nbsp;</p>
+<p>	&nbsp;</p>
+</section>
+<section id="secondary_classes">
+	<div class="page-header"><h3>Secondary Classes</h3><hr class="notop"></div>
+<p>	Secondary classes or options classes are give you the ability to further customize an element. You&#39;ll see a lot of references inside the docuemntation of adding Secondary Classes to elements, and these are the available secondary classes you can use.&nbsp;</p>
+<h4 id="secondary_classes_spacing">Spacing</h4>
+<p>	<strong>full-bottom:&nbsp;</strong>adds a margin bottom to an element, that is equal to the container spacing, to keep visual hiearchy</p>
+<p>	<strong>half-bottom:</strong> adds half the total of the margin bottom used throughout containers</p>
+<p>	<strong>no-bottom</strong>: this class can be used if you are using an element within a container that has a full bottom at the end. That will result in having a full bottom added by default from both elements. To counter this, you can add no-bottom to any of the elements to keep one of them from applying the bottom. An instant example would be if you have a parahraph inside a container. You can add the class no-bottom either to the parahraph or the container and only one of them will add the bottom margin.</p>
+<h4 id="secondary_classes_background_colors">Background Colors</h4>
+<p>	Some elements such as highlighted text, headings or notifications and many others, have a background color secondary class added to them that represents the background-color of that element. By default, we chose some of the internationally used colors, but you can easily choose between the following secondary classes to change the background colors.&nbsp;</p>
+<p>	<strong>Teal:&nbsp;</strong>bg-teal-light or bg-teal-dark</p>
+<p>	<strong>Green:&nbsp;</strong>bg-green-light or bg-green-dark</p>
+<p>	<strong>Blue:&nbsp;</strong>bg-blue-light or bg-blue-dark</p>
+<p>	<strong>Magenta:&nbsp;</strong>bg-magenta-light or bg-magenta-dark</p>
+<p>	<strong>Yellow:&nbsp;</strong>bg-yellow-light or bg-yellow-dark</p>
+<p>	<strong>Red:&nbsp;</strong>bg-red-light or bg-red-dark</p>
+<p>	<b>Orange:&nbsp;</b>bg-orange-light or bg-orange-dark</p>
+<p>	<strong>Gray:&nbsp;</strong>bg-gray-light or bg-orange-dark</p>
+<h4 id="secondary_classes_social_background_colors">Social Background Colors</h4>
+<p>	If you encounter a situation where you need a background color to match social media we&#39;ve included the default colors of each social media ( we know are used, sorry if we missed any, but do tell us and we&#39;ll gladly update the framework with more feautres)&nbsp;</p>
+<p>	<strong>Facebook&nbsp;</strong>: facebook-color</p>
+<p>	<strong>Twitter:&nbsp;</strong>twitter-color</p>
+<p>	<strong>Google:&nbsp;</strong>google-color</p>
+<p>	<strong>Pinterest:</strong> pinterest-color</p>
+<p>	<strong>SMS</strong>: sms-color ( this is green as per default on mobile messanging apps )&nbsp;</p>
+<p>	<b>Mail:&nbsp;</b>mail-color ( this is blue, as most mail icons are blue )</p>
+<p>	<strong>Dribbble:&nbsp;</strong>dribbble-color</p>
+<p>	<b>Tumblr:&nbsp;</b>tumblr-color</p>
+<p>	<strong>Reddit:&nbsp;</strong>reddit-color</p>
+<p>	<strong>YouTube:&nbsp;</strong>youtube-color&nbsp;</p>
+<p>	When giving an element the social aditional class, the color of the text and the background will automaticlly change. We&#39;ve included social icons and buttons as well that you can find &nbsp;in the Other Features Chapter</p>
+<h4 id="secondary_classes_text_color">Text Color</h4>
+<p>	Although this feautre is not experiemental, you can change certain colors of text using aditional classes. If that doesn&#39;t work, it means the feature is deeply integrated into CSS and you&#39;ll have to locate that feature&#39;s class and change it directly from framework.css or style.css. Adding the following secondary classes to elements should change the color of the text unless explained as above</p>
+<p>	<strong>Teal:&nbsp;</strong>color-teal-light or color-teal-dark</p>
+<p>	<strong>Green:&nbsp;</strong>color-green-light or color-green-dark</p>
+<p>	<strong>Blue:&nbsp;</strong>color-blue-light or color-blue-dark</p>
+<p>	<strong>Magenta:&nbsp;</strong>color-magenta-light or color-magenta-dark</p>
+<p>	<strong>Yellow:&nbsp;</strong>color-yellow-light or color-yellow-dark</p>
+<p>	<strong>Red:&nbsp;</strong>color-red-light or color-red-dark</p>
+<p>	<b>Orange:&nbsp;</b>color-orange-light or color-orange-dark</p>
+<p>	<strong>Gray:&nbsp;</strong>color-gray-light or color-orange-dark</p>
+<p>	&nbsp;</p>
+<h4 id="secondary_classes_text_features">Text Features</h4>
+<p>	You can set the text to center, left, or right, and also modify it from bold to light, italic or regular using simple classes as well</p>
+<p>	<strong>center-text</strong> makes the text centered on all resolutions</p>
+<p>	<strong>right-text</strong> makes the text right aligned on all resolutions</p>
+<p>	<strong>left-text&nbsp;</strong>makes the text left aligned on all resolutions</p>
+<p>	Adding&nbsp;<strong>-mobile&nbsp;</strong>or&nbsp;<strong>-tablet</strong> to the the above classes will apply the setting only for those devices.&nbsp;</p>
+<p>	<strong>uppercase&nbsp;</strong>makes the text uppercased</p>
+<p>	<strong>lowercase&nbsp;</strong>makes the text lowercased</p>
+<p>	<strong>thin</strong> makes the text thin</p>
+<p>	<strong>bold</strong> makes the text bold ( like the default strong class )</p>
+<p>	<strong>ultrabold&nbsp;</strong>makes the text the maximum bold available for that font.</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+</section>
+<section id="typography_features">
+	<div class="page-header"><h3>Typography Features</h3><hr class="notop"></div>
+<p>	Now the fun begins! Let&#39;s start talking features!&nbsp;</p>
+<div class="alert alert-error">
+	All the features from this point forward, unless otherwise specified, must be applied using the Structure, Content Structure and Column Structure Chapters Mentioned above!&nbsp;</div>
+<p>	&nbsp;</p>
+<h4 id="typography_features_dropcaps_nbsp">Dropcaps&nbsp;</h4>
+<p>	The item comes with 4 optional dropcaps variations. Replace&nbsp;<strong>dropcaps-VALUE&nbsp;</strong>the value with numbers 1, 2, 3 or 4 to change the style. Examples can be found in the template.&nbsp;</p>
+<pre class="prettyprint lang-html linenums">
+&lt;p class=&quot;dropcaps-1 one-half-responsive&quot;&gt;
+    Aorem ipsum dolor sit amet, consectetur adipiscing elit.
+&lt;/p&gt;    </pre>
+<h4 id="typography_features_text_highlights">Text Highlights</h4>
+<p>	Text highlights consist of two classes. A paragraph that houses the main element, and a span that has a class and a background class to initiate the highlight effect. Different backgrounds can be used, and these are located within the&nbsp;<strong>Secondary Classes&nbsp;</strong>Chapter.</p>
+<pre class="prettyprint lang-html linenums">
+&lt;p&gt;
+    &lt;span class=&quot;highlighted bg-red-dark color-white&quot;&gt;Highlighting text&lt;/span&gt; 
+    is really easy to use!
+&lt;/p&gt;</pre>
+<h4 id="typography_features_lists,_ordered,_unordered_and_icon_list">Lists, Ordered, Unordered and Icon List</h4>
+<p>	Lists used the default structure of any item in the world, with OL for ordered lists, and UL for regular lists, as shown in the example below.</p>
+<p>	<strong>Ordered List ( Number List )&nbsp;</strong></p>
+<pre class="prettyprint lang-html linenums">
+&lt;ol&gt;
+    &lt;li&gt;Item&lt;/li&gt;
+    &lt;li&gt;Item&lt;/li&gt;
+&lt;/ol&gt;</pre>
+<p>	<b>Unordered List ( Disc List )</b></p>
+<pre class="prettyprint lang-html linenums">
+&lt;ul&gt;
+    &lt;li&gt;Item&lt;/li&gt;
+    &lt;li&gt;Item&lt;/li&gt;
+&lt;/ul&gt;</pre>
+<p>	<strong>Icon List ( Font Icon List )</strong></p>
+<p>	Using font lists is simple, but, we made a special chapter about it, that will also allow you to know exactly what the font awesome CSS library does, and how to update it if you need it. Please check the&nbsp;<strong>Font Icon Chapter</strong> for more details&nbsp;</p>
+<pre class="prettyprint lang-html linenums">
+&lt;ul class=&quot;icon-list&quot;&gt;
+    &lt;li&gt;&lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt; List Item&lt;/li&gt;
+    &lt;li&gt;&lt;i class=&quot;fa fa-lock&quot;&gt;&lt;/i&gt; List Item&lt;/li&gt;
+    &lt;li&gt;&lt;i class=&quot;fa fa-cog fa-spin&quot;&gt;&lt;/i&gt; List Item&lt;/li&gt;
+&lt;/ul&gt;</pre>
+<h4 id="typography_features_checkboxes_and_radios">Checkboxes and Radios</h4>
+<p>	The defult structure for checkboxes and radios applies to our item, these will take the style of the device you&#39;re browsing from.&nbsp;</p>
+<pre class="prettyprint lang-html linenums">
+&lt;input id=&quot;check-label-1&quot; class=&quot;checkbox&quot; type=&quot;checkbox&quot;&gt;
+&lt;label class=&quot;checkbox-label&quot; for=&quot;check-label-1&quot;&gt;Checkbox&lt;/label&gt;
+
+<span style="font-family: Arial, Verdana, sans-serif;">&lt;input id=&quot;radio-label-1&quot; class=&quot;radiobox&quot; type=&quot;radio&quot;&gt;
+&lt;label class=&quot;radio-label&quot; for=&quot;radio-label-1&quot;&gt;Radio Button&lt;/label&gt;</span></pre>
+<p>	&nbsp;</p>
+<h4 id="typography_features_text_fields">Text Fields</h4>
+<p>	Text fields use the default structure of HTML fields, with the adtion of classes like&nbsp;<strong>green-field</strong> and&nbsp;<strong>red-field</strong> to signify issues with the fields. The class&nbsp;<strong>text-field</strong> must be added to them in order for the template styling to apply.</p>
+<pre class="prettyprint lang-html linenums">
+&lt;input class=&quot;text-field green-field&quot; onfocus=&quot;if (this.value==&#39;Good Field&#39;) this.value = &#39;&#39;&quot; onblur=&quot;if (this.value==&#39;&#39;) this.value = &#39;Good Field&#39;&quot; type=&quot;text&quot;  value=&quot;Good Field&quot;&gt;
+
+&lt;input class=&quot;text-field red-field&quot; onfocus=&quot;if (this.value==&#39;Red Field&#39;) this.value = &#39;&#39;&quot; onblur=&quot;if (this.value==&#39;&#39;) this.value = &#39;Red Field&#39;&quot; type=&quot;password&quot;  value=&quot;Red Field&quot;&gt;</pre>
+<div>
+	<div>
+		&nbsp;</div>
+	<h4 id="typography_features_text_fields_with_icons">Text Fields with Icons</h4>
+	<p>		Creating a text field with an icon implies adding the field within a housing contaner. It&#39;s easy to do but a structure must be followed. After doing so, the principles of the field explained above apply to these as well, and the icons presented in the icon chapter can all be used</p>
+	<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;text-icon-field&quot;&gt;
+    &lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt;
+    &lt;h6&gt;Username&lt;/h6&gt;
+    &lt;em&gt;*required&lt;/em&gt;
+    &lt;input class=&quot;text-field green-field&quot; onfocus=&quot;if (this.value==&#39;Good Field&#39;) this.value = &#39;&#39;&quot; onblur=&quot;if (this.value==&#39;&#39;) this.value = &#39;Good Field&#39;&quot; type=&quot;text&quot; value=&quot;Good Field&quot;&gt;
+&lt;/div&gt;</pre>
+</div>
+<div>
+	Line 1 is the housing class of the field</div>
+<div>
+	Line 2 is the icon of the field ( check the icon chapter )&nbsp;</div>
+<div>
+	Line 3 is the title of the field&nbsp;</div>
+<div>
+	Line 4 is the required or optional text of the field</div>
+<div>
+	Line 5 is the field text itself,&nbsp;</div>
+<div>
+	Line 6 closes the housing class of the field.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<h4 id="typography_features_blockquotes">Blockquotes</h4>
+<p>	We&#39;ve included 5 blockquote styles, but some variations can be found in the reviews page. As for these elements, you can choose any from the below or view them in the typography page. Each has a different structure, so please follow it!</p>
+<p>	You can simply copy and paste these quotes directly from the template we provided and replace the values with your own. A mention that needs to be made is the star rating left by the customer.</p>
+<p>	<strong>fa-star&nbsp;</strong>= full star rating&nbsp;</p>
+<p>	<b>fa-star-o&nbsp;</b>= empty star&nbsp;</p>
+<p>	<b>fa-star-half&nbsp;</b>= half a star&nbsp;</p>
+<p>	These ratings can be found in the typography html file and the reviews page html file.&nbsp;</p>
+<h4 id="typography_features_heading_examples">Heading examples</h4>
+<p>	<strong>Fullscreen Heading, Center Text, and Background</strong></p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;container-fullscreen heading-style-3 bg-2&quot;&gt;
+    &lt;h3 class=&quot;heading-title&quot;&gt;Heading Variations&lt;/h3&gt;
+    &lt;em class=&quot;heading-subtitle&quot;&gt;This is heading style too!&lt;/em&gt;
+    &lt;div class=&quot;overlay bg-black&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>	The heading is encased inside the container-fullscreen, and has the value heading-style-3 and bg-2 ( for bg-2 check the&nbsp;<strong>Secondary Classes Chapter&nbsp;</strong>)&nbsp;</p>
+<p>	This heading contains the main title, the small text, and the overlay over the background&nbsp;</p>
+<p>	<strong>Heading with Clickable Icon and Line Decoration</strong></p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;heading-style-1 container&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-cog&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;h4&gt;Demo 1&lt;/h4&gt;
+    &lt;div class=&quot;heading-block bg-red-dark&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;heading-decoration bg-red-dark&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+<div>
+	The main class is heading-style-1, inside there is the icon, aligned to the right, ( check the icon chapter ) the title, the line decoration and the icon background. Different backgrounds can be used (check the seconday classes chapter )&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Heading with center line decoration and small text</strong></div>
+<div>
+	&nbsp;</div>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;container heading-style-4&quot;&gt;
+    &lt;h4 class=&quot;heading-title&quot;&gt;Demo 2&lt;/h4&gt;
+    &lt;div class=&quot;line bg-red-dark&quot;&gt;&lt;/div&gt;
+    &lt;p class=&quot;heading-subtitle&quot;&gt;
+        Larger center headings for even more information can be added as well!
+    &lt;/p&gt;
+&lt;/div&gt;</pre>
+<div>
+	The main class heading-style-4, inside there is the main title, the line decoration with different backgrounds ( check secondary classes chapter formore ) and the small text&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>Heading with center icon and line decoration</strong></div>
+<div>
+	&nbsp;</div>
+<div>
+	<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;container heading-style-5&quot;&gt;
+    &lt;h4 class=&quot;heading-title&quot;&gt;Demo 3&lt;/h4&gt;
+    &lt;i class=&quot;fa fa-cog heading-icon&quot;&gt;&lt;/i&gt;
+    &lt;div class=&quot;line bg-black&quot;&gt;&lt;/div&gt;
+    &lt;p class=&quot;heading-subtitle&quot;&gt;
+        Maybe incorporate an icon as well? Makes it even better!
+    &lt;/p&gt;
+&lt;/div&gt;  </pre>
+</div>
+<div>
+	The main class, heading-style-5, inside havin the main title, the icon ( check icon chapter ) the line decoration ( check secondary classes chapter ) and the small text.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+</section>
+<section id="jquery_features">
+	<div class="page-header"><h3>jQuery Features</h3><hr class="notop"></div>
+<h4 id="jquery_features_os_styled_toggles">OS Styled Toggles</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;container switch-box&quot;&gt;
+    &lt;h4&gt;iOS Style 1&lt;/h4&gt;
+    &lt;a href=&quot;#&quot; class=&quot;switch switch-1 switch-1-on&quot;&gt;
+        &lt;!-- Bellow the explanation there are 3 styles available for this button --&gt; 
+
+        &lt;!-- The switch-1 class can be replaced with switch-2 or switch-3 --&gt; 
+    &lt;/a&gt;
+    &lt;em class=&quot;switch-box-subtitle&quot;&gt;
+        Text Under The Title.
+    &lt;/em&gt;
+    &lt;div class=&quot;switch-box-content&quot;&gt;
+        &lt;p class=&quot;no-bottom&quot;&gt;
+            Text that shows when toggling.
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 1 openes the switchbox&nbsp;</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 2 Is the title next to the switch</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 3, 4, 5, 6, 7 is the button that changes when tapping it. There are 3 styles available.&nbsp;</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 8 9 10 is the subtitle under the main tittle. This dissapears when typing the button.</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 11 12 13 14 15 is the content for the toggle.&nbsp;</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Line 16 closes the switchbox.&nbsp;</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	<strong>Style 1 for switch-1 ( green round switch )&nbsp;</strong></p>
+<pre class="prettyprint lang-html linenums">
+&lt;em&gt;I&lt;/em&gt;
+&lt;span&gt;&lt;/span&gt;
+&lt;em&gt;0&lt;/em&gt;</pre>
+<div>
+	<span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; line-height: 18px;">Creates the I / O toggle button.&nbsp;</span></div>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	<strong>Style 2 for switch-1 ( green round switch )&nbsp;</strong></p>
+<pre class="prettyprint lang-html linenums">
+&lt;em&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt;&lt;/em&gt;
+&lt;span&gt;&lt;/span&gt;
+&lt;em&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/em&gt;</pre>
+<p>	Creates the X and Tick toggle button</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	<strong>Style 3 for switch-1 ( green round switch )&nbsp;</strong></p>
+<pre class="prettyprint lang-html linenums">
+&lt;span&gt;&lt;/span&gt;</pre>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	This removes the icons and leaves just the green / red toggle button.</p>
+<p>	<strong>Style 1 for switch-2 ( gray square switch )&nbsp;</strong></p>
+<pre class="prettyprint lang-html linenums">
+&lt;span&gt;
+    &lt;em&gt;I&lt;br&gt;O&lt;/em&gt;
+&lt;/span&gt;</pre>
+<div>
+	This creates the I / O toggle button.</div>
+<p>	<strong>Style 2 for switch-2 ( gray square switch )&nbsp;</strong></p>
+<pre class="prettyprint lang-html linenums">
+&lt;span&gt;
+    &lt;em&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;br&gt;&lt;i class=&quot;fa fa-plus&quot;&gt;&lt;/i&gt;&lt;/em&gt;
+&lt;/span&gt;</pre>
+<div>
+	This creates the plus and tick button</div>
+<p>	<strong>Style 3 for switch-2 ( gray square switch )&nbsp;</strong></p>
+<pre class="prettyprint lang-html linenums">
+&lt;span&gt;&lt;/span&gt;</pre>
+<div>
+	This leaves the default grey green toggle button.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<p>	<strong>Style 1 for switch-3 ( green quare switch )</strong></p>
+<pre class="prettyprint lang-html linenums">
+&lt;strong&gt;&lt;/strong&gt;
+&lt;span&gt;&lt;/span&gt;
+&lt;em&gt;I&lt;/em&gt;
+&lt;em&gt;O&lt;/em&gt;</pre>
+<div>
+	This creates the I/O toggle button.</div>
+<div>
+	&nbsp;</div>
+<p>	<strong>Style 2 for switch-3 ( green square switch )&nbsp;</strong></p>
+<pre class="prettyprint lang-html linenums">
+&lt;strong&gt;&lt;/strong&gt;
+&lt;span&gt;&lt;/span&gt;
+&lt;em&gt;+&lt;/em&gt;
+&lt;em&gt;-&lt;/em&gt;</pre>
+<div>
+	This creates the - / + toggle button.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<p>	<strong>Style 3 for switch-4 ( green square switch )&nbsp;</strong></p>
+<pre class="prettyprint lang-html linenums">
+&lt;strong&gt;&lt;/strong&gt;
+&lt;span&gt;&lt;/span&gt;</pre>
+<div>
+	This leaves the default green red toggle button.</div>
+<h4 id="jquery_features_regular_toggles">Regular Toggles</h4>
+<p>	Regular toggles must be housed isnide a container, each one in a different container, to make sure the JavaScript can reach them easily and keep them dinamic.&nbsp;</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;toggle active-toggle&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;toggle-title&quot;&gt;Active Toggle&lt;i class=&quot;rotate-toggle fa fa-plus&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;div class=&quot;toggle-content&quot;&gt;
+        &lt;p&gt;
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>	The above example will generate an active toggle. To activate a toggle use the secondary class&nbsp;<strong>active-toggle&nbsp;</strong>and also, the main anchor houses an icon, this icon must have the secondary class&nbsp;<strong>rotate-toggle.</strong> The&nbsp;<strong>active-toggle</strong> shows the content while the&nbsp;<strong>rotate-toggle</strong> changes the plus sign at the right to a red x sign.&nbsp;</p>
+<h4 id="jquery_features_accordions">Accordions</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;accordion&quot;&gt;
+    &lt;h6 class=&quot;accordion-toggle&quot;&gt;
+        Accordion 1
+        &lt;i class=&quot;fa fa-angle-down rotate-180&quot;&gt;&lt;/i&gt;
+    &lt;/h6&gt;
+    &lt;div class=&quot;accordion-content active-accordion&quot;&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;h6 class=&quot;accordion-toggle&quot;&gt;
+        Accordion 2
+        &lt;i class=&quot;fa fa-angle-down&quot;&gt;&lt;/i&gt;
+    &lt;/h6&gt;
+    &lt;div class=&quot;accordion-content&quot;&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet,&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>	The accordion targets the child above it to make it active, on tap. To create an accordion, you need a class the <strong>accordion-toggle </strong>with the title and the icon, and the <strong>accordion-content</strong> where the content will be shown! Once an accordion is clicked it cannot be unclicked. To make an accordion active by default, give the accordion-content the secondary class <b>active-accordion&nbsp;</b>and you must give the icon the secondary class&nbsp;<strong>rotate-180</strong></p>
+<h4 id="jquery_features_tabs">Tabs</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;ul class=&quot;tabs&quot;&gt;
+    &lt;li class=&quot;tab-link active-tab&quot; data-tab=&quot;tab-1&quot;&gt;Tab 1&lt;/li&gt;
+    &lt;li class=&quot;tab-link&quot; data-tab=&quot;tab-2&quot;&gt;Tab 2&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;div id=&quot;tab-1&quot; class=&quot;tab-content active-tab-content&quot;&gt;
+    Lorem ipsum dolor sit amet
+&lt;/div&gt;
+
+&lt;div id=&quot;tab-2&quot; class=&quot;tab-content&quot;&gt;
+     Duis aute irure dolor in 
+&lt;/div&gt;
+</pre>
+<p>	Tabs are based on a very easy and simple to follow structure, but the entire structure above must be placed within a&nbsp;<strong>container&nbsp;</strong>to make sure the JS can target the tabs properly. You can use as many tabs as you want but we recommned using tops 4 considering the smallest scree (5s / 5, S3 / S4 ) have resolutions of 320 pixels. To create a new tab you need to add duplicate the list on line 3 and give it the <b>data-tab=&quot;tab-NUMBER&quot;&nbsp;</b>and also, give the same&nbsp;<strong>tab-NUMBER</strong> value to a div and the class&nbsp;<strong>tab-content</strong>. Just like in the code example above.&nbsp;</p>
+<h4 id="jquery_features_notifications">Notifications</h4>
+<h4 id="jquery_features_stronglarge_notifications_strong"><strong>Large Notifications</strong></h4>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;static-notification bg-red-dark&quot;&gt;
+    &lt;h6&gt;&lt;i class=&quot;fa fa-times-circle static-notification-icon&quot;&gt;&lt;/i&gt;This is a notification&lt;/h6&gt;
+    &lt;a class=&quot;static-notification-close&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;p&gt;
+        You can use any text you want and have a close or tap to dismiss system for your notifications.
+    &lt;/p&gt;
+&lt;/div&gt;</pre>
+<p>	A large notification has the main title with the close icon and the representiative icon of that notification, the text, and that&#39;s all! Not really hard!&nbsp;</p>
+<p>	The main class&nbsp;<strong>static-notification</strong> is combined with a secondary class that adjusts the background. You can find more about these in the <b>Secondary Classes&nbsp;</b>Chapter</p>
+<p>	<b>TIP:</b> If you don&#39;t want to have an icon for the notification, give it the&nbsp;<strong>Secondary Class</strong>&nbsp;<strong>disabled</strong>. Deleting it completly may cause issues since they are targeted using CSS.</p>
+<p>	&nbsp;</p>
+<h4 id="jquery_features_strongsmall_notifications_strong"><strong>Small Notifications</strong></h4>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;static-notification bg-red-dark tap-dismiss&quot;&gt;
+    &lt;p&gt;
+        &lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt;
+        This is a warning notification
+    &lt;/p&gt;
+&lt;/div&gt; </pre>
+<p>	Small notifications unlike their bigger brothers have no closing icon and no paragraph, yet the same principle applies. They include the same background color changes that can be found in the&nbsp;<strong>Secondary Class Chapter&nbsp;</strong>and have an aditional class that allows hiding them. If you add the secondary class&nbsp;<strong>tap-dismiss</strong> to your notifications, clicking them will result in them hiding.&nbsp;</p>
+<p>	&nbsp;</p>
+<h4 id="jquery_features_strongfixed_top_and_bottom_notifications_strong"><strong>Fixed Top and Bottom Notifications</strong></h4>
+<p>	These notifications, require some changes in the JS, but don&#39;t worry. we&#39;ll walk you through them. Also, changes to the entire structure of the page must be applied, so please, read carefuly!&nbsp;</p>
+<p>	<strong>The trigger</strong> of a fixed bottom or fixed top notification is simply a link / anchor, which you can place whever you want for a user to tap and activate this&nbsp;</p>
+<pre class="prettyprint lang-html linenums">
+&lt;a class=&quot;show-top-notification-1&quot; href=&quot;#&quot;&gt;Fixed Top Notification&lt;/a&gt;   </pre>
+<p>	But, if you looked at the <b>Structure Chapter</b> we added a number (10) there saying remember this. Well, that is the place the actualy notitification panel must be placed in. So, your trigger goes anywhere you want it, but&nbsp;<strong>fixed notifications contents must be added outside the structure in the place of (10) in the structure chapter.</strong></p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;top-notification-1 top-notification bg-blue-dark&quot;&gt;
+    &lt;h4&gt;Did you know?&lt;/h4&gt;
+    &lt;p&gt;
+        Easy way to make sure your messages get read!
+    &lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;close-top-notification&quot;&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/div&gt;</pre>
+<p>	A fixed top notification, like the one above is comprised of 3 classes</p>
+<p>	<strong>top-notification-1&nbsp;</strong>is directly connected to the&nbsp;<strong>show-top-notification-1</strong> that triggers it.&nbsp;</p>
+<p>	<strong>top-notification</strong> is the class that CSS uses to arange the notification to the top</p>
+<p>	<strong>bg-blue-dark</strong> is the secondary class which is discussed in the <b>Secondary Classes Chapter&nbsp;</b>that allows you to change it&#39;s colors.&nbsp;</p>
+<p>	<b>NOTE:</b>&nbsp;You can set notifications to timeout after 5 seconds, by adding the aditional class&nbsp;<b>timeout-notification&nbsp;</b></p>
+<p>	The exact same principle applies for fixed bottom notifications, only that now you have&nbsp;<strong>bottom-notification-1 &nbsp;/ bottom-notification&nbsp;</strong><strong>/ show-bottom-notification-1&nbsp;</strong>instead of the above.</p>
+<h4 id="jquery_features_how_to_create_your_own,_you_ask_simple!_nbsp">How to create your own, you ask? Simple!&nbsp;</h4>
+<p>	&nbsp;</p>
+<h4 id="jquery_features_strong_n1_the_trigger_place_it_whever_you_want_nbsp_strong"><strong>(N1) The Trigger: ( Place it Whever you want )&nbsp;</strong></h4>
+<pre class="prettyprint lang-html linenums">
+&lt;a class=&quot;show-top-notification-VALUE&quot; href=&quot;#&quot;&gt;Fixed Top Notification&lt;/a&gt; </pre>
+<h4 id="jquery_features_strong_n2_the_notification_place_it_outisde_the_content,_as_explained_above_nbsp_strong"><strong>(N2) The Notification (Place it outisde the content, as explained above)&nbsp;</strong></h4>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;top-notification-VALUE top-notification bg-blue-dark&quot;&gt;
+    &lt;h4&gt;Did you know?&lt;/h4&gt;
+    &lt;p&gt;
+        Easy way to make sure your messages get read!
+    &lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;close-top-notification&quot;&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/div&gt;</pre>
+<h4 id="jquery_features__n3_the_javascript">(N3) The JavaScript</h4>
+<pre class="prettyprint lang-js linenums">
+$(&#39;.show-top-notification-VALUE&#39;).click(function(){
+    $(&#39;.top-notification, .bottom-notification, .timeout-notification&#39;).slideUp(200);
+    $(&#39;.top-notification-VALUE&#39;).slideDown(200);
+});    </pre>
+<p>	&nbsp;</p>
+<p>	Connecting all the pieces from N1, N2, N3 together, the only thing you have to change is the&nbsp;<strong>-VALUE&nbsp;</strong>class to a unique number. So if you have show-top-notification-5, then all the <b>-VALUE</b> must be 5. That&#39;s it!&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	&nbsp;</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	&nbsp;</p>
+</section>
+<section id="other_features">
+	<div class="page-header"><h3>Other Features</h3><hr class="notop"></div>
+<h4 id="other_features_buttons!_nbsp">Buttons!&nbsp;</h4>
+<p>	We&#39;ve added tones of variations of buttons, and we&#39;ll go over each and every one of them to show you how easy they are to use!&nbsp;</p>
+<p>	<strong>Note:&nbsp;</strong>the&nbsp;<strong>Secondary Class Chapter</strong> for background colors does not apply to buttons!</p>
+<p>	&nbsp;</p>
+<h4 id="other_features_secondary_classes_available_for_buttons">Secondary Classes Available for Buttons</h4>
+<p>	These are Secondary Classes you can add to your buttons to change their color, appearance or positioning.&nbsp;</p>
+<p>	<strong>button-green, button-teal, button-blue, buton-dark, button-yellow, button-orange, button-magenta&nbsp;</strong>are the colors available for the buttons&nbsp;</p>
+<p>	<strong>button-round</strong> - changes the default square border button to a rounded bordered button</p>
+<p>	<b>green-3d, teal-3d, blue-3d, red-3d, dark-3d, yellow-3d, orange-3d, magenta-3d&nbsp;</b>make the buttons have a 3D effect by adding a border bottom. Using this class is&nbsp;<strong>NOT</strong> compatible wih <b>button-round</b></p>
+<p>	<strong>button-xl, button-l, button-s, button-xs,&nbsp;</strong>changes the size of the buttons&nbsp;</p>
+<h4 id="other_features_regular_button">Regular Button</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;a href=&quot;#&quot; class=&quot;button button-green&quot;&gt;Button&lt;/a&gt;</pre>
+<p>	This is the regular class of a simple, default button. the <b>Secondary Classes above apply.</b></p>
+<h4 id="other_features_regular_round_button">Regular Round Button</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;a href=&quot;#&quot; class=&quot;button button-green button-round&quot;&gt;Button&lt;/a&gt;</pre>
+<p>	This is the regular class of a simple, round button. the&nbsp;<b>Secondary Classes above apply.</b></p>
+<h4 id="other_features_3d_buttons_nbsp">3D Buttons&nbsp;</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;a href=&quot;#&quot; class=&quot;button button-green green-3d&quot;&gt;Button&lt;/a&gt;</pre>
+<p>	This is the regular class of a simple, 3D button. the&nbsp;<b>Secondary Classes above apply.</b></p>
+<h4 id="other_features_icon_buttons">Icon Buttons</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;a href=&quot;#&quot; class=&quot;button button-icon button-green&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;Button&lt;/a&gt;</pre>
+<p>	These buttons have icons attached to them and therefore the secondary class&nbsp;<strong>button-icon</strong> plus an icon inside the anchor. To find out more about icons, check the&nbsp;<strong>Icon Chapter.&nbsp;</strong></p>
+<p>	&nbsp;</p>
+<h4 id="other_features_speach_bubbles">Speach Bubbles</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;container&quot;&gt;
+    &lt;em class=&quot;speach-left-title&quot;&gt;John Doe says:&lt;/em&gt;
+    &lt;p class=&quot;speach-left&quot;&gt;This is just an awesome bubble! It&#39;s quite cute isn&#39;t it?&lt;/p&gt;
+
+    &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+
+    &lt;em class=&quot;speach-right-title&quot;&gt;Jane Doe replied:&lt;/em&gt;
+    &lt;p class=&quot;speach-right blue-bubble&quot;&gt;Yeap! It&#39;s awesome isn&#39;t it and it&#39;s not that hard to use! And they act like bubbles, only expanding to 75% of width!&lt;/p&gt;
+
+    &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>	Speach bubbles allow you to add conversations to your page. These must be included inside a&nbsp;<strong>container&nbsp;</strong>class as shown above.&nbsp;</p>
+<p>	You can add&nbsp;<strong>blue-bubble&nbsp;</strong>or&nbsp;<strong>green-bubble</strong> secondary classes to the paragraph to change the color of the text.&nbsp;</p>
+<h4 id="other_features_this_or_that_classes">This or That Classes</h4>
+<p>	This or that line breakers allow to add the class - or - button between different offers you may have. These are simple to use and we&#39;ve included 3 versions to aid you out!&nbsp;</p>
+<h4 id="other_features_style_1_button_or_button_nbsp">Style 1 ( button or button )&nbsp;</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;or-buttons-style-1&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;button button-blue button-round&quot;&gt;
+        Get Pro
+    &lt;/a&gt;
+    &lt;em&gt;or&lt;/em&gt;
+    &lt;strong&gt;&lt;/strong&gt;
+    &lt;a href=&quot;#&quot; class=&quot;button button-orange button-round&quot;&gt;
+        Get Basic
+    &lt;/a&gt;
+&lt;/div&gt;</pre>
+<p>	Line 1 has the class&nbsp;<strong>or-button-style-1 .</strong>These are calibrated to work properly for small screens, so adding a tone of text inside the buttons is NOT indicated. The width of each button is set to 108 pixels to ashure the quality will not diminish on smaller screens. For that, there&#39;s the next style!&nbsp;</p>
+<h4 id="other_features_style_2_button_or_button,_bigger_">Style 2 ( button or button, bigger )</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;or-buttons-style-2&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;button button-blue button-round&quot;&gt;Get Pro - $ 25.99&lt;/a&gt;
+    &lt;em&gt;or&lt;/em&gt;
+    &lt;strong&gt;&lt;/strong&gt;
+    &lt;a href=&quot;#&quot; class=&quot;button button-green button-round&quot;&gt;Get Basic  - $ 15.99&lt;/a&gt;
+&lt;/div&gt;</pre>
+<p>	Line 1 has the class&nbsp;<strong>or-button-style-2</strong>&nbsp;. This is calibrated to have more text and therefore is setup on two lines! You can add however much text you want ( not the entire site of course ) to your buttons and they will be split into 2 lines</p>
+<h4 id="other_features_style_2_the_divider_nbsp">Style 2 ( the divider )&nbsp;</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;or-buttons-style-3&quot;&gt;
+    &lt;em&gt;or&lt;/em&gt;
+    &lt;strong&gt;&lt;/strong&gt;   
+&lt;/div&gt;</pre>
+<p>	The classic or line divider, copy and paste it whever you want it to and boom! &nbsp;A line decoration with an or in the middle will appear!&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+</section>
+<section id="not_the_end">
+	<div class="page-header"><h3>Not the end! </h3><hr class="notop"></div>
+<p>	This is not the end of the documentaiton! Now, you know the structure of which the mobile template is built upon!&nbsp;</p>
+<p>	Please continue reading the individual features of the template, and of course, how to setup your pages and pageapps!&nbsp;</p>
+<p>	&nbsp;</p>
+</section>
+
+	</div>
+</body>
+</html>
