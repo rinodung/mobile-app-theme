@@ -1,0 +1,3 @@
+[submodule "mobile-angular-ui"]
+	path = mobile-angular-ui
+	url = https://github.com/mcasimir/mobile-angular-ui.git
